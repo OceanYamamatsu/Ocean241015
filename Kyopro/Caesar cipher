@@ -1,0 +1,18 @@
+def brute_force_caesar_cipher(ciphertext):
+    x=0
+    for shift in range(26):
+        decrypted_text = ""
+        for char in ciphertext:
+
+            if char.isalpha():
+                decrypted_text += chr((ord(char) - shift - 65) % 26 + 65)
+            else:
+                decrypted_text += char
+        x=str(shift)
+        if shift <= 9:
+            x='0'+x
+
+        print(f"Shift {x}: {decrypted_text}")
+
+ciphertext = input()
+brute_force_caesar_cipher(ciphertext)
