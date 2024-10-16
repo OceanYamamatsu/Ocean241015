@@ -1,4 +1,4 @@
-cd ps,t=map(int,input().split())
+#cd ps,t=map(int,input().split())
 ans=0
 for a in range(s+1):
     for b in range(s+1):
@@ -6,7 +6,7 @@ for a in range(s+1):
             if a+b+c <= s and a*b*c <= t:
                 ans+=1
 print(ans)
-"""""""
+##################################
 a=0
 b=0
 c=0
@@ -53,16 +53,16 @@ if len(a1) == 0:
 else:
     c=1
 
-if math.prod(b1) == 0:8
-    if len(b1)==1:
-        d=b0//3
-    else:
-        d=2
-else:
-    d=1
-ans=c+d
-print(ans)
-"""""""
+# if math.prod(b1) == 0:8
+#     if len(b1)==1:
+#         d=b0//3
+#     else:
+#         d=2
+# else:
+#     d=1
+# ans=c+d
+# print(ans)
+# """""""
 #/////////////////////////////////////////////////////////
 
 a=1
@@ -311,59 +311,59 @@ print(can_rearrange_strings(strings))  # 出力: True
 
 #aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+# using System.Collections;
+# using System.Collections.Generic;
+# using UnityEngine;
 
-public class BombController : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
+# public class BombController : MonoBehaviour
+# {
+#     // Start is called before the first frame update
+#     void Start()
+#     {
         
-    }
+#     }
 
-    // Update is called once per frame
-    void Update()
-    {
+#     // Update is called once per frame
+#     void Update()
+#     {
         
-    }
+#     }
 
-    void OnTriggerEnter(Collider c)
-    {
-        c.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 100, ForceMode.Impulse);
-    }
+#     void OnTriggerEnter(Collider c)
+#     {
+#         c.gameObject.GetComponent<Rigidbody>().AddForce(Vector3.up * 100, ForceMode.Impulse);
+#     }
 
-}
-
-
-#ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+# }
 
 
-def combination2():
-    a,b=map(int,input().split())
-    if a > b:
-        lc1=[a-u for u in range(b)]
-        lc2=[u+1 for u in range(b)]
-        y=1
-        z=1
-        x=0
-        for u in lc1:
-            y*=u
-        for u in lc2:
-            z*=u
-        if 0==y%z:
-            ans=y//z
-            #return True
-        else:
-            ans=y/z
-            ans='No'
-    else:
-        ans='No1'
-        #return False
-    print(ans)
+# #ssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
 
-combination2()
+
+# def combination2():
+#     a,b=map(int,input().split())
+#     if a > b:
+#         lc1=[a-u for u in range(b)]
+#         lc2=[u+1 for u in range(b)]
+#         y=1
+#         z=1
+#         x=0
+#         for u in lc1:
+#             y*=u
+#         for u in lc2:
+#             z*=u
+#         if 0==y%z:
+#             ans=y//z
+#             #return True
+#         else:
+#             ans=y/z
+#             ans='No'
+#     else:
+#         ans='No1'
+#         #return False
+#     print(ans)
+
+# combination2()
 
 #aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
@@ -588,13 +588,13 @@ else:
 
 
 
-    if c == len(t):
-    print('Yes')
-else:
-    print('No')
+#     if c == len(t):
+#     print('Yes')
+# else:
+#     print('No')
 
-print(len(t))
-print(c)
+# print(len(t))
+# print(c)
 
 
 
