@@ -618,16 +618,16 @@ if len(t) <= len(s):
 
 
 #aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-sql
+# sql
 
-#insert into users (uid, name) values (22211379,'yamamatsu');
-select * from users;
+# #insert into users (uid, name) values (22211379,'yamamatsu');
+# select * from users;
 
-#aaaaaaaaaaa
+# #aaaaaaaaaaa
 
-insert into users (uid, name) values (22211379,'yamamatsu');
-update users set name='Yamamatsu'where uid=22211379;
-select * from users;
+# insert into users (uid, name) values (22211379,'yamamatsu');
+# update users set name='Yamamatsu'where uid=22211379;
+# select * from users;
 
 
 #aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
@@ -838,9 +838,9 @@ print(s2)
 for i in s2:
     j=t[0]
     if i <= j:
-        ans.append(j):
+        ans.append(j)
     else:
-        ans.append(i):
+        ans.append(i)
 
 
 
@@ -1110,9 +1110,9 @@ for i in range(n):
 
 
 
-8
-84 87 78 16 94 36 87 93
-50 22 63 28 91 60 64 27
+# 8
+# 84 87 78 16 94 36 87 93
+# 50 22 63 28 91 60 64 27
 
 
 
@@ -1279,9 +1279,9 @@ for i in range(n):
 
 ###############################################################################################################################
 
-理解しました。`sys.stdin.read` を使用せずに、標準入力から直接データを読み取り、処理する方法を示します。以下のコードでは、標準入力から行ごとにデータを読み取り、その後で処理を行います。
+# 理解しました。`sys.stdin.read` を使用せずに、標準入力から直接データを読み取り、処理する方法を示します。以下のコードでは、標準入力から行ごとにデータを読み取り、その後で処理を行います。
 
-```python
+# ```python
 def main():
     import sys
     input = sys.stdin.read
@@ -1321,8 +1321,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-```
 
+"""
 ### コードの説明:
 - **標準入力の読み取り**: `sys.stdin.read` の代わりに `input()` を使用して、標準入力からデータを読み取ります。`input().splitlines()` を使って各行をリストとして取得します。
 - **データの解析**: 最初の行から N と M を取得し、その後の行からグリッドの情報を取得します。
@@ -1413,7 +1413,7 @@ grid = [
 
 この操作により、プログラムでは入力されたグリッドの情報を効率的に取り出し、その後の処理（移動のシミュレーションなど）に利用することができます。
 ####################################################################################################################################################################################################
-
+"""
 
 import sys
 input = sys.stdin.read
@@ -1947,11 +1947,13 @@ lt=[[u+1,0] for u in range(n)]
 ct=0
 for i in a:
     ct+=1
-    lt[i-1][1]=
+    lt[i-1][1]
 
 
 print(n,a)
 print(lt)
 
+
+################################################################
 
 
