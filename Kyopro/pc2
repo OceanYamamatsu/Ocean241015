@@ -1,0 +1,55 @@
+n,a,b=map(int,input().split())
+s=input()
+# ans=set()
+ans=99999999999999999999999
+# print(s[0:-1:])
+# print(s[1:n]+s[0])
+cost=0
+an=-1
+bn=0
+ct=0
+
+z='0'
+nt=0+n
+#print(s[n-1-1])
+if n%2!=0:
+        nt-=1
+# print(nt,'nt')
+# print(nt//2,'nt/2')
+s=s[-1]+s[0:n-1]
+print(s)
+for u in range(n):
+    s=s[1::]+s[0]
+    an+=1
+    bn=0
+    for i in range(nt//2):
+        if s[i]!=s[n-1-i]:
+            #s[n-1]=s[0]
+            #s=s[0:n-1]+s[0]
+            bn+=1
+            #print(s,'bn',i)
+    if ans>=a*an+b*bn:
+         ans=a*an+b*bn
+
+        #print(s[n-1-i])
+    print(s,a*an,b*bn)
+    
+
+
+
+
+    # print(s)
+
+                               
+
+print(ans)
+
+    
+# print(a*an+b*bn)
+
+
+
+# print(s)
+# for u in s:
+#     print(u)
+
