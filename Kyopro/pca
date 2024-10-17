@@ -1,11 +1,11 @@
 #cd ps,t=map(int,input().split())
-ans=0
-for a in range(s+1):
-    for b in range(s+1):
-        for c in range(s+1):
-            if a+b+c <= s and a*b*c <= t:
-                ans+=1
-print(ans)
+# ans=0
+# for a in range(s+1):
+#     for b in range(s+1):
+#         for c in range(s+1):
+#             if a+b+c <= s and a*b*c <= t:
+#                 ans+=1
+# print(ans)
 ##################################
 a=0
 b=0
@@ -1052,7 +1052,7 @@ t=list(map(int,input().split()))
 
 lts=[]
 
-tem*0
+# tem*0
 lts.append(t[0])
 #=[]
 #zs=0
