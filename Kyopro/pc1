@@ -29,3 +29,5 @@ for _ in range(q):
             right = t
 
 print(ans)
+
+
