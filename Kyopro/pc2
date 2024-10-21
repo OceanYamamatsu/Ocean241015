@@ -23,3 +23,23 @@ for _ in range(q):
             right = t
 
 print(ans)
+
+n,q = map(int,input().split())
+l,r = [1,2]
+ans = 0
+for u in range(q):
+    h,t = input().split()
+    t = int(t)
+    if r == 'R':
+        mv = abs(r-t)
+        if (l<r and t<l)or(l>r and t>l):
+            mv = n-mv
+        r=t
+    else:
+        mov = abs(l-t)
+        if (r<l and t<r)or(r>l and t>r):
+            mov = n-mv
+        l=t
+    ans+=mv
+else:
+    print(ans)
