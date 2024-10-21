@@ -4,5 +4,28 @@ a= list(map(int, input().split()))
 b= list(map(int, input().split()))
 a=sorted(a)
 b=sorted(b)
-for i in b:
-    while 
+# for i in b:
+#     while 
+##############################################
+
+n, q = map(int, input().split())
+left = 1
+right = 2
+ans = 0
+
+for _ in range(q):
+    h, t = input().split()
+    t = int(t)
+
+    if h == 'L':
+        move = min(abs(left - t), n - abs(left - t))
+        if t != right:
+            ans += move
+            left = t
+    else:
+        move = min(abs(right - t), n - abs(right - t))
+        if t != left:
+            ans += move
+            right = t
+
+print(ans)
