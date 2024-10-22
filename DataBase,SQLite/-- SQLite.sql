@@ -2,8 +2,9 @@
 
 -- SELECT * FROM Club;
 -- select id, name as '名前', Budget/Members from club;
-select id, name from club where type = 1;
-select id, name from club where type=2 and budget >= 150000;
+select id, name from club where Budget<150000;
+select id, name from club where type=1 and Members<10 or budget < 100000;
+select id, name from club where not (Members >=20 or type=1);
 
 
 
