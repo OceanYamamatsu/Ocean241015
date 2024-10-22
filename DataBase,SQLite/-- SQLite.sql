@@ -1,3 +1,15 @@
+
+
+-- SELECT * FROM Club;
+-- select id, name as '名前', Budget/Members from club;
+select id, name from club where type = 1;
+select id, name from club where type=2 and budget >= 150000;
+
+
+
+
+
+
 -- SQLite
 -- .help
 -- .databases
@@ -19,8 +31,3 @@
 -- (9, '野球部', '阿部拓也', '3-1', '高田', 37, '2', '401', 200000),
 -- (10, '陸上部', '岩本さなえ', '3-2', '田中', 22, '2', '401', 100000);
 -- tablelinyuu
-
--- SELECT * FROM Club;
--- select id, name as '名前', Budget/Members from club;
-select id, name from club where type = 1;
-select id, name from club where type=2 and budget >= 150000;
