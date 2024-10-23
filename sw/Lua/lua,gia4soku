@@ -1,4 +1,4 @@
--- 初期化
+
 local signalState = {false, false, false, false}  -- 信号1～信号4の状態を保持
 local currentSignal = 1  -- 現在の信号番号（1から開始）
 local buttonPressed = false  -- ボタンの押下状態を保持
