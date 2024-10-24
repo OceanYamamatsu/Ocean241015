@@ -22,3 +22,69 @@ for _ in range(q):
 print(ans)
 
 
+
+left = 1
+right = 2
+ans = 0
+
+a=[]
+for _ in range(q):
+    h, hm = input().split()
+    t = int(t)
+
+    if h == 'L':
+        hand=left
+        te=right
+    else:
+        hand=right
+        te=left
+    if te-hand<=hm:
+        a+=te-hand
+        if t != left:
+            ans += move
+
+            right = t
+
+print(ans)
+
+
+
+
+
+
+n, m = map(int, input().split())
+dl={}
+# al=[i for i in range(m)]
+for u in range(m):
+    a,b=map(int, input().split())
+    if a not in dl:
+        dl[a]=[b]
+    else:
+        dl[a].append(b)
+print(dl)
+nl=[[] for u in range(m+1)]
+# print(type(nl[0]))
+# print(type(dl[1]))
+# print()
+nl[0]=nl[0]+dl[1]
+print(nl[0])
+for i in range(m):
+    print(i)
+    for q in nl[i]:
+        nl[i+1]=nl[i+1]+dl[q]
+
+        if 1 in nl[i+1]:
+            print(i+2)
+            break
+    else:
+        print(nl)
+        continue
+    break
+
+    # nl[i]=nl[i]+dl[i+1]
+    print(nl[i],i)
+else:
+    print(-1)
+
+# print(dl)
+# print(nl)
