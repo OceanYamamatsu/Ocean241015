@@ -2,19 +2,32 @@
 
 -- SELECT * FROM Club;
 -- select id, name as '名前', Budget/Members from club;
-select id, name from club where Budget<150000;
-select id, name from club where type=1 and Members<10 or budget < 100000;
-select id, name from club where not (Members >=20 or type=1);
+-- select id, name from club where Budget<150000;
+-- select id, name from club where type=1 and Members<10 or budget < 100000;
+-- select id, name from club where not (Members >=20 or type=1);
+-- 10/29
+-- 問１
+-- select sum(Members), avg(Members), max(Members), min(Members), count(id) from club;
+-- 問２
+-- select sum(Members) - max(Members) from club ;
+-- 問３
+-- select count(class) from club where class=='3-1';
+-- select name from club where GROUP by type;
+-- XX select type, name, Members from Club GROUP by Type ORDER by Members;
 
+-- select type, name, Members from Club GROUP by Type;
+-- 問４
+-- select type, name, Members from Club ORDER by type, Members;
 
-
-
-
+-- select type, name, Members from Club GROUP by Type ;
+-- 問５
+-- select id, name, Members from club  where type =='2' order by Members;
+SELECT* from club;
 
 -- SQLite
 -- .help
 -- .databases
--- .exit
+-- .exiti, 
 -- 確認↑
 
 -- CREATE TABLE `Club` (`ID` int(11) NOT NULL primary key,`Name` varchar(50) NOT NULL,`Captain` varchar(50) NOT NULL,`Class` varchar(10) NOT NULL,`Adviser` varchar(50) NOT NULL,`Members` int(11) NOT NULL,`Type` char(1) NOT NULL,`Room` char(3) NOT NULL,`Budget` int(11) NOT NULL);
