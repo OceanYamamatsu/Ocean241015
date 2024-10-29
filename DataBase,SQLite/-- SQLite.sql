@@ -5,24 +5,22 @@
 -- select id, name from club where Budget<150000;
 -- select id, name from club where type=1 and Members<10 or budget < 100000;
 -- select id, name from club where not (Members >=20 or type=1);
--- 10/29
--- 問１
+-- -- 10/29
+-- -- 問１
 -- select sum(Members), avg(Members), max(Members), min(Members), count(id) from club;
--- 問２
+-- -- 問２
 -- select sum(Members) - max(Members) from club ;
--- 問３
+-- -- 問３
 -- select count(class) from club where class=='3-1';
--- select name from club where GROUP by type;
--- XX select type, name, Members from Club GROUP by Type ORDER by Members;
-
--- select type, name, Members from Club GROUP by Type;
--- 問４
+-- -- select name from club where GROUP by type;
+-- -- XX select type, name, Members from Club GROUP by Type ORDER by Members;
+-- -- select type, name, Members from Club GROUP by Type;
+-- -- 問４
 -- select type, name, Members from Club ORDER by type, Members;
-
--- select type, name, Members from Club GROUP by Type ;
--- 問５
+-- -- select type, name, Members from Club GROUP by Type ;
+-- -- 問５
 -- select id, name, Members from club  where type =='2' order by Members;
-SELECT* from club;
+-- SELECT* from club;
 
 -- SQLite
 -- .help
