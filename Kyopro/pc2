@@ -18,7 +18,7 @@ for _ in range(q):
     if te-hand<=hm:
         a+=te-hand
         if t != left:
-            ans += move
+            #ans += move
 
             right = t
 
