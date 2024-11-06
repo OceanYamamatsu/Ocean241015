@@ -10,8 +10,16 @@ mysql -u root -p
 Mysqlを使用してdatabseseを作成してみよう
 https://eng-entrance.com/mysql%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E4%BD%9C%E6%88%90%E7%B7%A8
 
+https://www.demandosigno.study/entry/2019/09/16/174753
+
 metasploitableでsql検索した時に出てきた。良さげ
 https://www.demandosigno.study/archive/category/Metasploitable%202
+
+脆弱なアプリケーション(DVWA)をOCIにデプロイする
+https://qiita.com/western24/items/92bc1b82d164d9be41f6
+
+【Webアプリ開発】セキュリティ入門⑤　DVWAの活用方法の紹介（note）
+https://note.com/kenpapa/n/nc2dd1fa6f6e2
 
 厚労省が出してるセキュリティ講座
 https://www.mhlw.go.jp/content/11800000/000701091.pdf
