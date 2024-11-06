@@ -1,4 +1,5 @@
-# Ocean241015
+
+# Mysqlを知れ
 Linux Mysql
 
 system start mysqld.service
@@ -8,6 +9,9 @@ mysql -u root -p
 
 Mysqlを使用してdatabseseを作成してみよう
 https://eng-entrance.com/mysql%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%A6%E3%81%BF%E3%82%88%E3%81%86-%E3%83%87%E3%83%BC%E3%82%BF%E3%83%99%E3%83%BC%E3%82%B9%E4%BD%9C%E6%88%90%E7%B7%A8
+
+metasploitableでsql検索した時に出てきた。良さげ
+https://www.demandosigno.study/archive/category/Metasploitable%202
 
 厚労省が出してるセキュリティ講座
 https://www.mhlw.go.jp/content/11800000/000701091.pdf
