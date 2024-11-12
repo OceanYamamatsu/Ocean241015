@@ -1,5 +1,5 @@
 
-# Mysqlを知れ
+# Mysqlを知れよ
 Linux Mysql
 
 system start mysqld.service
