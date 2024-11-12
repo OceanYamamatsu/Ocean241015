@@ -74,7 +74,7 @@ Launch this image locally:の下
 をcopyしてWindowsCmdにてペーストしてdockerの起動
 
 
-　　　　　　　　　　　　　　　　　　↓時間指定　　　　　↓バージョン指定
+　　　　   ↓バックグラウンドで実行　↓時間指定　　　　　↓バージョン指定
 docker run -d --name nginx-container -e TZ=UTC -p 8080:80 ubuntu/nginx:1.18-22.04_beta
 ↑起動　　　　↑コンテナの名前を付ける　　　　↑-pポート開放
 
@@ -88,3 +88,8 @@ docker start コンテナid
 
 docker stop コンテナid
 コンテナ終了
+
+https://hub.docker.com/r/kalilinux/kali-rolling
+docker pull kalilinux/kali-rolling
+
+docker run -d -it --name iskallilinux01 kalilinux/kali-rolling
