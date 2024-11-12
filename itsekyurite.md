@@ -7,7 +7,6 @@ msfadmin
 
 sudo shutdown now
 
-
 https://editor.note.com/notes/nc0ef0d7438d0/edit/
 
 192.168.56.101
@@ -38,7 +37,6 @@ sudo apt update && upgrade -y
 
 sudo apt install -y snort
 //installする
-
 
 
 snort --version
