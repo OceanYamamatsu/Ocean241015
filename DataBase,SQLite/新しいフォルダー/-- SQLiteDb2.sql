@@ -12,8 +12,17 @@
 select * from Lending;
 select * from book;
 -- select * from Lending, book;
---24/11/12
---Q1
-select lending.id, bookid, name, Duedata, ReturnDate from Lending, book where bookid = book.id;
---Q2
--- select lending.id, bookid, name, StudentID, CheckoutDate, DueDate, ReturnDate from Lending, Book where Lending.BookID = Book.id and DueDate = '2015-04-17';
+----24/11/12
+----Q1
+select lending.id, bookid, name, Duedate, ReturnDate 
+from Lending, book 
+where bookid = book.id;
+----Q2
+select lending.id, bookid, name, StudentID, CheckoutDate, DueDate, ReturnDate 
+from Lending, Book where Lending.BookID = Book.id and DueDate = '2015-04-17';
+----Q3
+select lending.id, Bookid, name, StudentID, CheckoutDate, DueDate
+from lending, book 
+where lending.bookid = book.id 
+and DueDate >= '2015-04-16' and ReturnDate = '0000-00-00';
+
