@@ -9,20 +9,20 @@
 ---- テーブルのデータ `Book`
 -- INSERT INTO `Book` (`ID`, `Name`, `Type`) VALUES ('A-69', 'IT産業の興亡', 6),('F-45', '富士山の岩と石', 4),('J-11', '17歳のための哲学入門', 1),('K-37', 'ケータイと学校文化', 3),('N-58', '日本の町工場', 5),('P-23', 'パリ歴史散歩', 2),('T-35', '統計でみる日本と世界の高校生', 3),('U-91', '海辺のフェリーチェ', 9);
 
-select * from Lending;
-select * from book;
--- select * from Lending, book;
-----24/11/12
-----Q1
-select lending.id, bookid, name, Duedate, ReturnDate 
-from Lending, book 
-where bookid = book.id;
-----Q2
-select lending.id, bookid, name, StudentID, CheckoutDate, DueDate, ReturnDate 
-from Lending, Book where Lending.BookID = Book.id and DueDate = '2015-04-17';
-----Q3
-select lending.id, Bookid, name, StudentID, CheckoutDate, DueDate
-from lending, book 
-where lending.bookid = book.id 
-and DueDate >= '2015-04-16' and ReturnDate = '0000-00-00';
+-- select * from Lending;
+-- select * from book;
+-- -- select * from Lending, book;
+-- ----24/11/12
+-- ----Q1
+-- select lending.id, bookid, name, Duedate, ReturnDate 
+-- from Lending, book 
+-- where bookid = book.id;
+-- ----Q2
+-- select lending.id, bookid, name, StudentID, CheckoutDate, DueDate, ReturnDate 
+-- from Lending, Book where Lending.BookID = Book.id and DueDate = '2015-04-17';
+-- ----Q3
+-- select lending.id, Bookid, name, StudentID, CheckoutDate, DueDate
+-- from lending, book 
+-- where lending.bookid = book.id 
+-- and DueDate >= '2015-04-16' and ReturnDate = '0000-00-00';
 
