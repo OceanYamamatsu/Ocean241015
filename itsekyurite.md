@@ -28,7 +28,7 @@ exploit
 
 
 
-# 11/05
+11/05
 
 sudo apt update && upgrade -y
 //sudo(すーdu-)
@@ -58,7 +58,7 @@ alert tcp 192.168.56.105 any -> 192.168.56.255/24 22 (msg: "SSH conection from k
 ssh user@ip
 //kaliでうぶんとに投げる
 
-# 24/11/12
+24/11/12
 
 
 Docker Desktop
@@ -111,7 +111,7 @@ docker run -d --name container-metasploitable2 -it tleemcjr/metasploitable2:late
 
 出来たコンテナID''17004b1f7993''
 
-docker start 1163a27a0fe5
+
 
 docker rm コンテナid
 コンテナ削除
