@@ -28,7 +28,7 @@ exploit
 
 
 
-11/05
+# 11/05
 
 sudo apt update && upgrade -y
 //sudo(すーdu-)
@@ -58,7 +58,7 @@ alert tcp 192.168.56.105 any -> 192.168.56.255/24 22 (msg: "SSH conection from k
 ssh user@ip
 //kaliでうぶんとに投げる
 
-24/11/12
+# 24/11/12
 
 
 Docker Desktop
