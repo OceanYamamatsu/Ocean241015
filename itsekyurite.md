@@ -120,6 +120,7 @@ docker run -d --name container-metasploitable2 -p 8080:80 -it tleemcjr/metasploi
 
 1163a27a0fe5
 docker start 1163a27a0fe5
+
 docker exec -it 1163a27a0fe5 /bin/bash
 
 コンテナ内から外にはアクセスできるがコンテナ内にはポート経由でしかアクセスできない
