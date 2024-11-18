@@ -328,3 +328,81 @@ MySQL クライアントとサーバーのバージョンによっては、TLS/S
 - **SSL を無効にする**: サーバー側で SSL を無効にする設定を行う。
 
 これらの対処方法を試して、問題が解決するか確認してください。
+# 接続時に --ssl-mode=DISABLED オプションを追加したらmysql: unknown variable 'ssl-mode=DISABLED'が出た
+`mysql: unknown variable 'ssl-mode=DISABLED'` というエラーメッセージが表示された場合、`ssl-mode=DISABLED` オプションは MySQL のクライアントで使用できないオプションか、または使用している MySQL クライアントのバージョンに対応していない可能性があります。
+
+代わりに、MySQL クライアントで SSL を無効にする方法をいくつか紹介します。
+
+---
+
+### **1. SSL を無効にする方法 (MySQL クライアント側で設定)**
+
+MySQL クライアントから SSL を無効にするためには、以下の方法を試してください。
+
+#### **(1) `--skip-ssl` オプションを使用**
+
+MySQL クライアントで SSL を無効にするためには、`--skip-ssl` オプションを使用します。
+
+```bash
+mysql -h 192.168.56.106 -u root -p --skip-ssl
+```
+
+これにより、SSL/TLS 接続を無効にして、通常の非暗号化接続を使用します。
+
+---
+
+### **2. サーバー側で SSL を無効にする**
+
+もしサーバー側で SSL 設定を無効にする必要がある場合、サーバーの設定を変更して SSL を無効にすることができます。
+
+#### **(1) MySQL サーバーの設定ファイルを編集**
+
+MySQL サーバー側で SSL を無効にするには、MySQL の設定ファイル（通常は `/etc/mysql/my.cnf` や `/etc/mysql/mysql.conf.d/mysqld.cnf`）を編集し、`ssl` 関連の設定を無効にします。
+
+1. 設定ファイルを開きます：
+   ```bash
+   sudo nano /etc/mysql/my.cnf
+   ```
+
+2. `ssl` 関連の設定をコメントアウトまたは削除します：
+
+   ```ini
+   [mysqld]
+   # ssl-ca=/path/to/ca-cert.pem
+   # ssl-cert=/path/to/server-cert.pem
+   # ssl-key=/path/to/server-key.pem
+   # tls_version=TLSv1.2,TLSv1.3
+   ```
+
+3. サーバーを再起動します：
+   ```bash
+   sudo systemctl restart mysql
+   ```
+
+これにより、MySQL サーバーで SSL が無効になります。
+
+---
+
+### **3. SSL/TLS バージョンを指定する**
+
+もし SSL を有効にしている場合で、TLS のバージョンに問題がある場合、`--ssl-cipher` と `--ssl-version` を指定して接続することもできます。
+
+#### **(1) クライアント側で TLS バージョンを指定**
+
+例えば、TLS 1.2 を使用する場合、次のように指定できます：
+
+```bash
+mysql -h 192.168.56.106 -u root -p --ssl-cipher=DHE-RSA-AES256-SHA --ssl-version=TLSv1.2
+```
+
+これにより、特定のバージョンの TLS を使用して接続できます。
+
+---
+
+### **まとめ**
+
+- `--ssl-mode=DISABLED` オプションではなく、`--skip-ssl` オプションを使って SSL を無効にする。
+- サーバー側で SSL を無効にする場合は、設定ファイルで SSL 設定をコメントアウトして再起動する。
+- SSL バージョンの不一致を解決するために、クライアントで `--ssl-version` や `--ssl-cipher` を指定する。
+
+これらを試してみてください。エラーが解決するか確認をお願いします。
