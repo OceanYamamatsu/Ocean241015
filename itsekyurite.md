@@ -28,7 +28,7 @@ exploit
 
 
 
-11/05
+# 11/05
 
 sudo apt update && upgrade -y
 //sudo(すーdu-)
@@ -58,7 +58,7 @@ alert tcp 192.168.56.105 any -> 192.168.56.255/24 22 (msg: "SSH conection from k
 ssh user@ip
 //kaliでうぶんとに投げる
 
-24/11/12
+# 24/11/12
 
 
 Docker Desktop
@@ -119,7 +119,7 @@ docker rm コンテナid
 docker run -d --name container-metasploitable2 -p 8080:80 -it tleemcjr/metasploitable2:latest sh -c "/bin/services.sh && bash"
 
 1163a27a0fe5
-
+docker start 1163a27a0fe5
 docker exec -it 1163a27a0fe5 /bin/bash
 
 コンテナ内から外にはアクセスできるがコンテナ内にはポート経由でしかアクセスできない
