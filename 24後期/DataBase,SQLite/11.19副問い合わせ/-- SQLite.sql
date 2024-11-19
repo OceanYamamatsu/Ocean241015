@@ -24,11 +24,31 @@ select * from Certification;
 -- --問１
 -- select certificationname from Certification 
 -- where studentid = ( SELECT id from student where name = '河村宏' );
---問２
-select name from student 
-where id in (select studentid 
-from Certification where PassingDate = '2015-10-16');
+
+-- --問２
+-- select name from student 
+-- where id in (select studentid 
+-- from Certification where PassingDate = '2015-10-16');
+
 -- --問３
 -- select name from student 
 -- where id in (select studentid 
 -- from certification where certificationid = 'S-3');
+
+--問４
+select count(name) as '2015/10/16合格者数' from student 
+where id in (select studentid 
+from Certification where PassingDate = '2015-10-16');
+
+--問５
+select name from student where id in (select studentid 
+from Certification where PassingDate >= '2015-01-01');
+
+--問６
+select CertificationID, CertificationName from Certification 
+where StudentID in (select studentid from Student 
+where id = '2' and '2015-10-01' >= PassingDate >= '2016-3-31');
+
+--問７
+select name from student where id 
+not in (select studentid from Certification);
