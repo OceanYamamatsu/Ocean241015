@@ -9,8 +9,8 @@
 ---- テーブルのデータ `Book`
 -- INSERT INTO `Book` (`ID`, `Name`, `Type`) VALUES ('A-69', 'IT産業の興亡', 6),('F-45', '富士山の岩と石', 4),('J-11', '17歳のための哲学入門', 1),('K-37', 'ケータイと学校文化', 3),('N-58', '日本の町工場', 5),('P-23', 'パリ歴史散歩', 2),('T-35', '統計でみる日本と世界の高校生', 3),('U-91', '海辺のフェリーチェ', 9);
 
-select * from Lending;
-select * from book;
+-- select * from Lending;
+-- select * from book;
 -- -- select * from Lending, book;
 -- ----24/11/12
 -- ----Q1
@@ -26,9 +26,19 @@ select * from book;
 -- where lending.bookid = book.id 
 -- and DueDate >= '2015-04-16' and ReturnDate = '0000-00-00';
 ----Q4
-select count(bookid) as '貸出回数', bookid, name 
-from Lending, book
-where bookid = book.id
-group by(bookid) 
-having count(bookid) >= 2;
+-- select count(bookid) as '貸出回数', bookid, name 
+-- from Lending, book
+-- where bookid = book.id
+-- group by(bookid) 
+-- having count(bookid) >= 2;
 --groupbyの後はhaving
+
+--11/19
+-- select * from Lending;
+-- select * from book;
+
+-- select 
+
+select certificationname from Certification 
+where studentid = ( SELECT id from student where name = '河村宏' );
+
