@@ -21,19 +21,19 @@
 select * from Student;
 select * from Certification;
 
--- --問１
--- select certificationname from Certification 
--- where studentid = ( SELECT id from student where name = '河村宏' );
+--問１
+select certificationname from Certification 
+where studentid = ( SELECT id from student where name = '河村宏' );
 
--- --問２
--- select name from student 
--- where id in (select studentid 
--- from Certification where PassingDate = '2015-10-16');
+--問２
+select name from student 
+where id in (select studentid 
+from Certification where PassingDate = '2015-10-16');
 
--- --問３
--- select name from student 
--- where id in (select studentid 
--- from certification where certificationid = 'S-3');
+--問３
+select name from student 
+where id in (select studentid 
+from certification where certificationid = 'S-3');
 
 --問４
 select count(name) as '2015/10/16合格者数' from student 
