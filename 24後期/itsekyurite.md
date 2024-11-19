@@ -146,3 +146,7 @@ dockps
 https://note.com/preview/n2e63305601e9?prev_access_key=df026f8d0297d1be3984f4e015314bc1&classId=62881282-a934-4c0b-bf17-95d296704051
 
 https://note.com/preview/nadca2db583ba?prev_access_key=4e551dd8ed2c98fe7b45bbef06f339df&classId=62881282-a934-4c0b-bf17-95d296704051#5b751b18-2c63-4dc2-9a27-1b8b27a4c573
+
+
+https://seedsecuritylabs.org/Labs_20.04/
+https://seedsecuritylabs.org/Labs_20.04/Networking/
