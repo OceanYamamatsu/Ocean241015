@@ -126,3 +126,11 @@ docker exec -it 1163a27a0fe5 /bin/bash
 コンテナ内から外にはアクセスできるがコンテナ内にはポート経由でしかアクセスできない
 
 https://qiita.com/ky-jp16/items/5196a043586c47d556c9
+
+#11/19
+https://seedsecuritylabs.org/labs.html
+password
+
+ls
+pwd
+cd
