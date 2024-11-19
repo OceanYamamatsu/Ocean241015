@@ -39,6 +39,3 @@
 
 -- select 
 
-select certificationname from Certification 
-where studentid = ( SELECT id from student where name = '河村宏' );
-
