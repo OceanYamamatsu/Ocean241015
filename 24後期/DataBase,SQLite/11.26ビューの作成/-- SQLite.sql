@@ -17,18 +17,23 @@
 -- (8, 'テニス部', '川上さとし', '3-5', '山口', 19, '2', '403', 100000),
 -- (9, '野球部', '阿部拓也', '3-1', '高田', 37, '2', '401', 200000),
 -- (10, '陸上部', '岩本さなえ', '3-2', '田中', 22, '2', '401', 100000);
-SELECT type, Budget from club;
+-- SELECT * from club;
+
 -- -- 問１
--- create view Club2(name, captain, adbiser, members)
+-- create view Club2(name, captain, adviser, members)
 -- as
--- select name, captain, adbiser, members from club;
+-- select name, captain, adviser, members from club;
+
+-- drop view club2;
+-- select * from Club2;
 
 -- -- 問２
 -- create view TotalBudget(Type, TotalBaget)
 -- as
 -- select type, sum(budget) from club GROUP by type;
-
--- select * from Club2;
 -- drop view club2;
 
-SELECT * from TotalBudget where type=1;
+-- SELECT * from TotalBaget;
+
+-- 問３
+SELECT type, TotalBaget from TotalBudget where type=1;
