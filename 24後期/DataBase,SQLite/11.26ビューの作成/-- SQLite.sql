@@ -17,7 +17,7 @@
 -- (8, 'テニス部', '川上さとし', '3-5', '山口', 19, '2', '403', 100000),
 -- (9, '野球部', '阿部拓也', '3-1', '高田', 37, '2', '401', 200000),
 -- (10, '陸上部', '岩本さなえ', '3-2', '田中', 22, '2', '401', 100000);
--- SELECT * from club;
+SELECT * from club;
 
 -- -- 問１
 -- create view Club2(name, captain, adviser, members)
@@ -37,3 +37,19 @@
 
 -- 問３
 -- SELECT type, TotalBaget from TotalBudget where type=1;
+
+-- データの挿入更新修正
+
+-- insert into club
+-- values(11, 'チャイ部', '山田デス男', '6-2', '佐藤', '1', '3', '666', '2000');
+
+select * from club;
+select * from club2;
+
+-- create view club3('*')
+-- as
+-- select * from club;
+
+-- select '*' from club3;
+-- drop view club3;
+-- select * from club3;
