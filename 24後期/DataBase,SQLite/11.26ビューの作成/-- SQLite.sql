@@ -36,4 +36,4 @@
 -- SELECT * from TotalBaget;
 
 -- 問３
-SELECT type, TotalBaget from TotalBudget where type=1;
+-- SELECT type, TotalBaget from TotalBudget where type=1;
