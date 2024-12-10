@@ -143,10 +143,10 @@ INSERT INTO Stock (PrdID, Stk) VALUES
 ('A0031', 10),
 ('A0032', 10);
 
-
 select * from SalesInfo;
 select * from SalesSlip;
 select * from Customer;
 select * from PurchaseSlip;
 select * from Product;
 select * from Stock;
+
