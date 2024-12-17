@@ -136,7 +136,7 @@ INSERT INTO PurchaseSlip (ID, PDate, PrdID, Pqnty) VALUES
 ('P0011', '2015-01-09', 'A0031', 7),
 ('P0012', '2015-01-09', 'A0032', 4);
 ----------------------------------------------------------
-問１
+--問１
 CREATE VIEW View01 AS
 SELECT ID AS 商品コード, Name AS 商品名, PPrc AS 仕入単価
 FROM Product;
@@ -256,3 +256,15 @@ SELECT * FROM View12;
 -- DROP TABLE IF EXISTS SalesSlip;
 -- DROP TABLE IF EXISTS SalesInfo;
 -- DROP TABLE IF EXISTS PurchaseSlip;
+-- DROP VIEW IF EXISTS View01;
+-- DROP VIEW IF EXISTS View02;
+-- DROP VIEW IF EXISTS View03;
+-- DROP VIEW IF EXISTS View04;
+-- DROP VIEW IF EXISTS View05;
+-- DROP VIEW IF EXISTS View06;
+-- DROP VIEW IF EXISTS View07;
+-- DROP VIEW IF EXISTS View08;
+-- DROP VIEW IF EXISTS View09;
+-- DROP VIEW IF EXISTS View10;
+-- DROP VIEW IF EXISTS View11;
+-- DROP VIEW IF EXISTS View12;
