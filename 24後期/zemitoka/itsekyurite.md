@@ -167,3 +167,13 @@ site:tama.ac.jp filetype:pdf intext:'出原'
 
 shodan
     bid-ip
+censys
+
+脆弱性データベース
+cve
+nvd
+jvn
+
+tcp
+udp
+https://www.nicter.jp/en/atlas
