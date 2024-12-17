@@ -150,3 +150,20 @@ https://note.com/preview/nadca2db583ba?prev_access_key=4e551dd8ed2c98fe7b45bbef0
 
 https://seedsecuritylabs.org/Labs_20.04/
 https://seedsecuritylabs.org/Labs_20.04/Networking/
+
+
+
+# 24/12/17
+osintとは
+https://osintframework.com/
+https://whois.jprs.jp/
+jpニックハンドル
+big(nslookup)
+https://www.cman.jp/network/support/go_access.cgi
+    https://www.cman.jp/network/support/nslookup.html
+https://maltego.com/
+
+site:tama.ac.jp filetype:pdf intext:'出原'
+
+shodan
+    bid-ip
