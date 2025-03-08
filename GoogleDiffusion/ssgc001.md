@@ -1,3 +1,5 @@
+# 25/03/02
+
 # ランタイムをGPUに設定することを推奨
 import os
 
@@ -16,6 +18,7 @@ os.environ["HUGGINGFACE_TOKEN"] = "aaaaaaaaaaaaaaaaaaaaaa"
 
 # モデルとVAEのURLを設定
 MODEL_URL = "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
+
 VAE_URL = "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
 
 # モデルとVAEの保存先
