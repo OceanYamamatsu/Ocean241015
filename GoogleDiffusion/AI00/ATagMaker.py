@@ -20,4 +20,5 @@ def extract_tags(input_file, output_file):
         f.write(", " + ", ".join(tags) + ",")
 
 # 使用例
-extract_tags('input.txt', 'output.txt')
+extract_tags('C:/Users/hekat/py/Ocean241015/GoogleDiffusion/AI00/input.txt', 
+             'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/AI00/output.txt')
