@@ -1,3 +1,4 @@
+
 def extract_tags(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
