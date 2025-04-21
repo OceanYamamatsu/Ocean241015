@@ -1,177 +1,56 @@
-General
 ?
 1girl 6.4M
 ?
-back 97k
+animal ears 1.3M
 ?
-barefoot 391k
+artist name 415k
 ?
-bedroom 15k
+black jacket 261k
 ?
-black choker 173k
+buckle 52k
 ?
-black eyes 248k
+building 64k
 ?
-black hair 1.6M
-?
-black nails 82k
-?
-black shirt 238k
-?
-chair 97k
+cat ears 301k
 ?
 choker 440k
 ?
-colored skin 145k
+dated 201k
 ?
-denim 76k
-?
-denim shorts 35k
+dithering 1.6k
 ?
 ear piercing 77k
 ?
 earclip 9.2k
 ?
-earrings 612k
+green eyes 906k
 ?
-feet 214k
+hood 322k
 ?
-foot focus 26k
+hood down 101k
 ?
-gaming chair 1.6k
+hoodie 143k
 ?
-gauze 2.5k
-?
-gauze on cheek 1.4k
-?
-grey skin 15k
-?
-hair over one eye 266k
-?
-holding 1.5M
-?
-holding stuffed toy 16k
-?
-indoors 394k
+jacket 1.0M
 ?
 jewelry 1.2M
 ?
-looking at viewer 3.6M
+lamppost 10k
 ?
-monitor 13k
+necklace 268k
 ?
-nail polish 257k
-?
-on bed 120k
+outdoors 577k
 ?
 piercing 119k
 ?
-shirt 2.0M
+pixel art 21k
 ?
-short hair 2.4M
+portrait 90k
 ?
-shorts 478k
+sign 27k
 ?
-solo 5.3M
-?
-stuffed animal 74k
-?
-stuffed toy 91k
-?
-swivel chair 9.0k
-?
-toenail polish 28k
-?
-toenails 55k
-?
-toes 164k
-?
-trash bag 2.0kGeneral
-?
-1girl 6.4M
-?
-back 97k
-?
-barefoot 391k
-?
-bedroom 15k
-?
-black choker 173k
-?
-black eyes 248k
-?
-black hair 1.6M
-?
-black nails 82k
-?
-black shirt 238k
-?
-chair 97k
-?
-choker 440k
-?
-colored skin 145k
-?
-denim 76k
-?
-denim shorts 35k
-?
-ear piercing 77k
-?
-earclip 9.2k
-?
-earrings 612k
-?
-feet 214k
-?
-foot focus 26k
-?
-gaming chair 1.6k
-?
-gauze 2.5k
-?
-gauze on cheek 1.4k
-?
-grey skin 15k
-?
-hair over one eye 266k
-?
-holding 1.5M
-?
-holding stuffed toy 16k
-?
-indoors 394k
-?
-jewelry 1.2M
-?
-looking at viewer 3.6M
-?
-monitor 13k
-?
-nail polish 257k
-?
-on bed 120k
-?
-piercing 119k
-?
-shirt 2.0M
-?
-short hair 2.4M
-?
-shorts 478k
+snow 43k
 ?
 solo 5.3M
 ?
-stuffed animal 74k
-?
-stuffed toy 91k
-?
-swivel chair 9.0k
-?
-toenail polish 28k
-?
-toenails 55k
-?
-toes 164k
-?
-trash bag 2.0k
+winter 13k
