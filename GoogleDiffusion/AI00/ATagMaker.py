@@ -4,7 +4,7 @@ def extract_tags(input_file, output_file):
         lines = f.readlines()
 
     tags = []
-    skip_words = {"Characters", "General", "?"}
+    skip_words = {"Characters", "General", "?", "artist name", "twitter username", }
 
     for line in lines:
         line = line.strip()
