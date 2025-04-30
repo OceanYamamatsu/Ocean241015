@@ -1,89 +1,112 @@
+Artist
+?
+jestami 49
 Copyright
 ?
 original 1.2M
+Character
+?
+aria (jestami) 8
 General
 ?
 1girl 6.4M
 ?
-arms up 201k
+animal ears 1.3M
 ?
 artist name 417k
 ?
-baseball 3.2k
+assault rifle 18k
 ?
-baseball mitt 2.7k
+baseball cap 54k
 ?
-bike shorts 53k
+black thighhighs 400k
 ?
-black hair 1.6M
-?
-black shorts 135k
-?
-blonde hair 1.7M
-?
-borrowed character 26k
+blush 3.1M
 ?
 breasts 3.7M
 ?
-cowboy shot 611k
+clothes writing 46k
 ?
-crop top 212k
+ear protection 1.4k
 ?
-from side 241k
+fake animal ears 162k
 ?
-gloves 1.5M
+green hair 449k
 ?
-hair ornament 1.5M
+gun 153k
+?
+handgun 40k
+?
+hat 1.3M
+?
+hat with ears 1.3k
 ?
 holding 1.5M
 ?
-looking at viewer 3.6M
+holding gun 72k
 ?
-medium breasts 942k
+holding weapon 290k
 ?
-midriff 318k
+holster 16k
 ?
-multicolored hair 772k
+holstered 3.2k
 ?
-navel 1.2M
+jacket 1.0M
 ?
-parted lips 536k
+leotard 225k
 ?
-purple eyes 875k
+magazine (weapon) 5.0k
 ?
-shirt 2.0M
+microphone 55k
 ?
-short hair 2.4M
+off shoulder 259k
 ?
-short shorts 150k
+open clothes 540k
 ?
-short sleeves 671k
+open jacket 267k
 ?
-shorts 480k
+open mouth 2.6M
+?
+orange eyes 187k
+?
+playboy bunny 112k
+?
+ponytail 744k
+?
+rifle 44k
+?
+sig mcx 337
+?
+sig sauer 2.3k
+?
+sig sauer p320 122
 ?
 simple background 2.0M
 ?
+single thighhigh 62k
+?
+skindentation 123k
+?
 solo 5.3M
 ?
-sportswear 26k
+suppressor 2.8k
 ?
-standing 979k
+tailcoat playboy bunny 420
 ?
-star (symbol) 258k
+teeth 545k
 ?
-star hair ornament 37k
+thigh strap 171k
 ?
-streaked hair 276k
+thighhighs 1.2M
 ?
-striped clothes 251k
+tongue 409k
 ?
-striped shorts 2.8k
+upper teeth only 172k
 ?
-white shirt 946k
+weapon 635k
+?
+white jacket 128k
+?
+white leotard 31k
 ?
 yellow background 69k
-Meta
-?
-highres 5.8M
-?
-absurdres 2.0M
