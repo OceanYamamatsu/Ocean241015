@@ -3,7 +3,7 @@ def extract_tags(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
     tags = []
-    skip_words = {"Characters", "General", "?", "artist name", "artist name",
+    skip_words = {"Characters", "General", "?", "artist name",
 "twitter username", "copyright notice", "watermark","Meta","commentary",
  "english commentary", }
     for line in lines:
