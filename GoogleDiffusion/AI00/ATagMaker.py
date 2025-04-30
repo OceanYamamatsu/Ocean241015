@@ -1,37 +1,80 @@
+
 def extract_tags(input_file, output_file):
     with open(input_file, 'r', encoding='utf-8') as f:
         lines = f.readlines()
 
     tags = []
-    skip_words = {"characters", "general", "?", "artist name", "twitter username",
-                  "copyright notice", "watermark", "meta", "commentary",
-                  "english commentary", "character", "copyright", "artist", "original"}
+    skip_words = {
+        "Characters", "General", "?", "artist name", "twitter username",
+        "copyright notice", "watermark", "Meta", "commentary",
+        "english commentary", "Copyright", "Character", "Artist"
+    }
 
     for line in lines:
         line = line.strip()
-        if not line or line == "?":
+        if not line:
             continue
 
-        tag_candidate = ""
         if ' ' in line:
             parts = line.rsplit(' ', 1)
-            tag_candidate = parts[0].strip()
+            tag = parts[0]
         else:
-            tag_candidate = line
+            tag = line
 
-        # フィルタ（小文字化して判定）
-        if tag_candidate.lower() in skip_words:
+        if tag in skip_words:
             continue
 
-        tags.append(tag_candidate)
+        # スキップしないタグをリストに追加
+        if ' ' in line:
+            tags.append(tag)
 
-    # 出力
-    if tags:
-        with open(output_file, 'w', encoding='utf-8') as f:
-            f.write(", ".join(tags))
-        print(f"{len(tags)} 個のタグを出力しました: {output_file}")
-    else:
-        print("タグが抽出されませんでした。")
+    # 結果をoutput.txtに書き込み
+    with open(output_file, 'w', encoding='utf-8') as f:
+        f.write(", " + ", ".join(tags) + ",")
+        print("complethion")
+
+# 実行部分（ファイルパスは適宜変更）
+extract_tags(
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/AI00/input.txt',
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/AI00/output.txt'
+)
+
+
+
+# def extract_tags(input_file, output_file):
+#     with open(input_file, 'r', encoding='utf-8') as f:
+#         lines = f.readlines()
+
+#     tags = []
+#     skip_words = {"characters", "general", "?", "artist name", "twitter username",
+#                   "copyright notice", "watermark", "meta", "commentary",
+#                   "english commentary", "character", "copyright", "artist", "original"}
+
+#     for line in lines:
+#         line = line.strip()
+#         if not line or line == "?":
+#             continue
+
+#         tag_candidate = ""
+#         if ' ' in line:
+#             parts = line.rsplit(' ', 1)
+#             tag_candidate = parts[0].strip()
+#         else:
+#             tag_candidate = line
+
+#         # フィルタ（小文字化して判定）
+#         if tag_candidate.lower() in skip_words:
+#             continue
+
+#         tags.append(tag_candidate)
+
+#     # 出力
+#     if tags:
+#         with open(output_file, 'w', encoding='utf-8') as f:
+#             f.write(", ".join(tags))
+#         print(f"{len(tags)} 個のタグを出力しました: {output_file}")
+#     else:
+#         print("タグが抽出されませんでした。")
 
 
 # def extract_tags(input_file, output_file):
