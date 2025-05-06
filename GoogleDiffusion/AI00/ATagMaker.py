@@ -7,7 +7,7 @@ def extract_tags(input_file, output_file):
     skip_words = {
         "Characters", "General", "?", "artist name", "twitter username",
         "copyright notice", "watermark", "Meta", "commentary",
-        "english commentary", "Copyright", "Character", "Artist"
+        "english commentary", "Copyright", "Character", "Artist","english text",
     }
 
     for line in lines:
