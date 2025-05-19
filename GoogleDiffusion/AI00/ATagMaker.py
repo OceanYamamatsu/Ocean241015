@@ -8,7 +8,7 @@ def extract_tags(input_file, output_file):
         "Characters", "General","original", "?", "artist name", "twitter username",
         "copyright notice", "watermark", "Meta", "commentary",
         "english commentary", "Copyright", "Character", "Artist","english text",
-        "commentary request",
+        "commentary request", "translation request", "censored",
     }
 
     for line in lines:
