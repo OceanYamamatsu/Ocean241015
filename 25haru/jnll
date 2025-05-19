@@ -1,0 +1,132 @@
+メイン コンテンツにスキップ
+Google Classroom
+Classroom
+WP) 2025 ウェブプログラミング実践
+ホーム
+カレンダー
+登録科目
+ToDo
+I
+Idehara Laboratory 2025
+2
+2025_情報ネットワーク
+W
+WP) 2025 ウェブプログラミング実践
+W
+WEB Design 2025
+先
+先端情報技術概論（2024・後期）
+ビ
+ビジネス数学I（線形代数）2024
+春学期
+調
+調査実験入門（2024）
+マ
+マーケティング・リサーチ2024
+2024年度
+デ
+データサイエンスI・2024
+I
+ITパスポート2024
+2
+2022春I-Yグローバルヒストリー
+アーカイブされたクラス
+設定
+課題の詳細
+PHP  の基本
+Norimichi Idehara Pro
+•
+5月13日
+100 点
+期限: 今日
+PHP の基本データ構造・制御構造を理解し、課題の指示に従って PHP プログラムを完成させなさい。
+
+lec03.css
+CSS
+クラスのコメント
+あなたの課題
+割り当て済み
+
+Ocean YAMAMATSU - report04-1.php
+PHP
+
+Ocean YAMAMATSU - report04-2.php
+PHP
+
+Ocean YAMAMATSU - report04-2.php
+不明
+
+Ocean YAMAMATSU - report04-1.php
+不明
+限定公開のコメント
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Report 04-1</title>
+	</head>
+	<body>
+
+<p>
+<ul>
+	<li>$x が与えられたら、以下の繰り返し処理を行い、繰り返しが何回実行されたか出力するプログラムを PHP で完成させなさい。</li>
+		<ol>
+			<li>x が１でない間、以下繰り返し
+				<ol>
+					<li>$x を表示</li>
+					<li>$x が偶数（ $x % 2 == 0 ) なら、$x を２で割る</li>
+					<li>そうでないなら、$x を１増やす</li>
+				</ol>
+		</ol>
+  <li>発展課題：1 から 1000 までの数字のうち、繰り返し回数が最大のものを一つ求めるプログラムを PHP で完成させなさい。</li>
+</ul>
+</p>
+
+<p>例：x = 123 で開始
+<pre>
+124
+62
+31
+32
+16
+8
+4
+2
+実行回数 9
+</pre>
+
+	<hr />
+
+<?php
+
+for($i = 1; $i < 1000; $i++)
+{
+	$x = $i;
+	$count = 0;		// 繰り返し回数の記録用
+
+	while( $x != 1 )
+	{
+		// $x を出力する
+//		print("$x<br>\n");
+		// $x が奇数なら１増やす。そうでないなら２で割る
+		if ( $x % 2 == 1 )
+		{
+			$x = $x + 1;
+		}
+		else {
+			$x = $x / 2;
+		}
+		// $count を１個増やす
+		$count = $count + 1;
+	}
+
+	print("$i について $count 回まわりました<br>\n");
+}
+
+ ?>
+
+
+	</body>
+</html>
+Ocean YAMAMATSU - report04-1.php
+Ocean YAMAMATSU - report04-1.php を表示しています。

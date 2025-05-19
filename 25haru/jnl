@@ -1,0 +1,115 @@
+メイン コンテンツにスキップ
+Google Classroom
+Classroom
+WP) 2025 ウェブプログラミング実践
+ホーム
+カレンダー
+登録科目
+ToDo
+I
+Idehara Laboratory 2025
+2
+2025_情報ネットワーク
+W
+WP) 2025 ウェブプログラミング実践
+W
+WEB Design 2025
+先
+先端情報技術概論（2024・後期）
+ビ
+ビジネス数学I（線形代数）2024
+春学期
+調
+調査実験入門（2024）
+マ
+マーケティング・リサーチ2024
+2024年度
+デ
+データサイエンスI・2024
+I
+ITパスポート2024
+2
+2022春I-Yグローバルヒストリー
+アーカイブされたクラス
+設定
+ファイルをコピーして添付しました課題の詳細
+PHP  の基本
+Norimichi Idehara Pro
+•
+5月13日
+100 点
+期限: 今日
+PHP の基本データ構造・制御構造を理解し、課題の指示に従って PHP プログラムを完成させなさい。
+
+lec03.css
+CSS
+クラスのコメント
+あなたの課題
+割り当て済み
+
+Ocean YAMAMATSU - report04-1.php
+PHP
+
+Ocean YAMAMATSU - report04-2.php
+PHP
+
+Ocean YAMAMATSU - report04-2.php
+不明
+
+Ocean YAMAMATSU - report04-1.php
+不明
+限定公開のコメント
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Report 04-2</title>
+		<link rel="stylesheet" href="lec03.css">
+	</head>
+	<body>
+
+<ol>
+	<li>与えられた $fruits 配列の内容を表形式 table で出力する PHP プログラムを作成しなさい</li>
+</ol>
+
+<hr />
+
+<p>出力例</p>
+<table>
+	<tr><th>フルーツ<th>色</tr>
+	<tr><td>apple<td>red</tr>
+	<tr><td>orange<td>orange</tr>
+	<tr><td>lemon<td>yello</tr>
+</table>
+
+
+
+<?php
+  $fruits = array (
+		'apple' => 'red',
+		'orange' => 'orange',
+		'lemon' => 'yellow'
+	);
+ ?>
+
+<hr>
+
+<p>現在の $members 配列の中身
+<?php
+  var_dump($fruits);
+ ?>
+
+<p>回答プログラム
+<table>
+<tr><th>フルーツ<th>色
+	<?php
+foreach($fruits as $k => $v)
+{
+		print("<tr><td>$k<td>$v\n");
+}
+	 ?>
+</table>
+	</body>
+</html>
+Ocean YAMAMATSU - report04-2.php
+Ocean YAMAMATSU - report04-2.php を表示しています。 
