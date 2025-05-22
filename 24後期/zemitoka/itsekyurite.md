@@ -10,6 +10,8 @@ sudo shutdown now
 https://editor.note.com/notes/nc0ef0d7438d0/edit/
 
 192.168.56.101
+
+↓kagi
 msfconsole
 
 nmap -sV <teaget ip>
