@@ -14,6 +14,7 @@ https://editor.note.com/notes/nc0ef0d7438d0/edit/
 ↓kagi
 msfconsole
 
+
 nmap -sV <teaget ip>
 
 search vsftpd 2.3.4
