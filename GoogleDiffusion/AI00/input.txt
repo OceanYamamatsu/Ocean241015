@@ -1,32 +1,73 @@
 Artist
 ?
-kilye kairi 1.4k
+cool est 40
 Copyright
 ?
-original 1.3M
+arknights 155k
+Character
+?
+blue poison (arknights) 1.7k
 General
 ?
 1girl 6.5M
 ?
-black bodysuit 34k
+blue eyes 1.9M
 ?
-black hair 1.7M
+blue jacket 110k
 ?
-bodysuit 134k
+blush 3.2M
 ?
-latex 12k
+braid 690k
 ?
-latex bodysuit 4.0k
+drop shadow 10k
 ?
-long hair 4.7M
+english text 273k
 ?
-purple eyes 889k
+from side 245k
 ?
-simple background 2.0M
+full body 911k
 ?
-skin tight 42k
+furrowed brow 43k
+?
+hood 329k
+?
+hood down 104k
+?
+hooded jacket 67k
+?
+jacket 1.1M
+?
+leggings 17k
+?
+leggings under shorts 814
+?
+liquid 3.4k
+?
+looking at viewer 3.7M
+?
+low twintails 124k
+?
+pants under shorts 452
+?
+parted lips 547k
+?
+pink hair 768k
+?
+sitting 1.0M
 ?
 solo 5.4M
+?
+stirrup legwear 10k
+?
+toeless legwear 20k
+?
+twin braids 194k
+?
+twintails 974k
+?
+yokozuwari 21k
 Meta
 ?
 highres 5.9M
+?
+absurdres 2.0M
