@@ -5,11 +5,15 @@ c=0
 lt=[]
 gg=["subprocess.Popen","werkzeug.wsgi.ClosingIterator","werkzeug.wsgi.FileWrapper","weakref","type"]
 for name in re.findall(r"<class '([^']+)'>", s):
-    #if name == "subprocess.Popen"or name =="werkzeug.wsgi.ClosingIterator"or name =="werkzeug.wsgi.FileWrapper"or name =="weakref" or name =="type":
     if name in gg:
         lt.append((c,name))
-        print("X",c,name)
+        print("XX",c,name,"XX")
     else:
         print(c,name)
     c+=1
 print(lt)
+
+    #if name == "subprocess.Popen"or name =="werkzeug.wsgi.ClosingIterator"or name =="werkzeug.wsgi.FileWrapper"or name =="weakref" or name =="type":
+
+
+#{{''.__class__.__mro__[1].__subclasses__()[300]}}
