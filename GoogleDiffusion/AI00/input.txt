@@ -1,97 +1,69 @@
 Artist
 ?
-molmax0710 21
-Copyrights
+mordredpenx 14
+Copyright
 ?
-a.i. voice 6.7k
-?
-utau 18k
+zenless zone zero 43k
 Character
 ?
-adachi rei 5.6k
+belle (zenless zone zero) 3.7k
 General
 ?
-1boy 1.6M
+1girl 6.6M
 ?
-1girl 6.5M
+alternate eye color 16k
 ?
-2koma 32k
+alternate hair color 15k
 ?
-averting eyes 7.4k
+ass 640k
 ?
-bags under eyes 30k
+black shirt 251k
 ?
-black gloves 492k
+closed mouth 1.4M
 ?
-black shirt 247k
+cowboy shot 629k
 ?
-blue background 137k
+crop top 218k
 ?
-comic 579k
+hair ornament 1.6M
 ?
-crying 84k
+hairpin 34k
 ?
-crying with eyes open 40k
+high-waist pants 7.2k
 ?
-flinch 249
+latex pants 298
 ?
-furrowed brow 44k
+looking at viewer 3.7M
 ?
-gloves 1.5M
+lying 488k
 ?
-hair ribbon 650k
+on bed 125k
 ?
-headlamp 3.8k
+on stomach 71k
 ?
-headpat 18k
+orange pants 3.4k
 ?
-jacket 1.1M
+pants 492k
 ?
-medium hair 436k
+purple eyes 898k
 ?
-nervous smile 8.1k
-?
-one side up 115k
-?
-open mouth 2.6M
-?
-orange eyes 191k
-?
-orange hair 264k
-?
-radio antenna 8.0k
-?
-reaching 33k
-?
-reaching towards another 899
-?
-ribbon 1.2M
+purple hair 713k
 ?
 shirt 2.1M
 ?
-simple background 2.0M
-?
 smile 3.2M
 ?
-tears 248k
+t-shirt 74k
 ?
-traumatized 388
+thighs 627k
 ?
-turtleneck 132k
+tight clothes 19k
 ?
-turtleneck shirt 6.2k
+tight pants 7.5k
 ?
-two-tone gloves 7.8k
-?
-white gloves 329k
-?
-white jacket 131k
-?
-white ribbon 65k
+white background 1.7M
 Meta
-?
-commentary 1.6M
 ?
 highres 5.9M
 ?
-translation request 601k
+absurdres 2.1M
