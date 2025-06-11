@@ -4,6 +4,6 @@ while True:
     print(bin_str)
     if bin_str == '1111':
         break
-    i += 1
     print(i)
+    i += 1
 print(i+1)
