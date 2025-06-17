@@ -14,3 +14,63 @@ show tables;
 show create table messages;
 update messages set body ='朝が早い' where uid='22211379';
 select * from messages;
+================================================================================-
+
+show tables;
+show create table fruits;
+select * from fruits;
+show create table sales;
+select * from sales;
+
+
+update sales set id =4 where count=5;
+insert into sales (id,count) values (5,60)
+
+================================================================================
+
+
+
+
+
+select * from users;
+insert into messages (uid,body) values ('22211379','腹痛が痛い');
+
+
+SELECT uid, body, timestamp FROM messages ORDER BY timestamp DESC LIMIT 3;
+
+
+
+
+
+
+
+
+show tables;
+show create table messages;
+select * from users;
+select * from messages;
+select uid, count(*) from messages group by uid;
+select m.uid, u.name, count(*) as message_count 
+from messages m join users u on m.uid = u.uid 
+group by m.uid, u.name order by message_counts desc limit 3;
+
+=======================================================================
+select m.uid, u.name, count(*) as message_count
+ from messages m join users u on m.uid = u.uid
+ group by m.uid, u.name order by message_counts
+ desc limit 3;
+
+
+
+
+
+
+
+
+ show tables;
+show create table messages;
+select * from users;
+select * from messages;
+select uid, count(*) from messages group by uid;
+
+select messages.uid, users.name, count(*) as messages_count from messages join users on m.uid = u.uid group by m.uid, u.name order by message_counts desc limit 3;
