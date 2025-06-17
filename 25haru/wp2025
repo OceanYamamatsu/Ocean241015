@@ -1,0 +1,16 @@
+show create table users;
+/*insert into users (uid,name) values ('22211379','山松桜上');*/
+update users set name = '山松' where uid='22211379';
+select * from users;
+
+
+
+show tables;
+show create table messages;
+insert into messages (uid,body) values ('22211379','頭痛が痛い');
+select * from messages;
+
+show tables;
+show create table messages;
+update messages set body ='朝が早い' where uid='22211379';
+select * from messages;
