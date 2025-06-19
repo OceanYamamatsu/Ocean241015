@@ -11,7 +11,7 @@ def extract_tags(input_file, output_file):
         "english commentary", "Copyright", "Character", "Artist","english text",
         "commentary request", "translation request", "censored", "mosaic censoring",
         "bar censor","signature","heart censor"
-        "adversarial noise","watermark grid",
+        "adversarial noise","watermark grid", "copyright name",
     }
 
     for line in lines:
