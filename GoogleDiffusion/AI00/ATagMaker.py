@@ -7,11 +7,12 @@ def extract_tags(input_file, output_file):
     skip_words = {
         
         "Characters", "General","original", "?", "artist name","circle name", "twitter username",
-        "copyright notice", "watermark", "Meta", "commentary",
-        "english commentary", "Copyright", "Character", "Artist","english text",
+        "copyright notice", "watermark", "Meta", "commentary","character censor",
+        "english commentary", "Copyright", "Character", "Artist","english text","korean text",
         "commentary request", "translation request", "censored", "mosaic censoring",
-        "bar censor","signature","heart censor","mixed-language commentary",
-        "adversarial noise","watermark grid", "copyright name",
+        "bar censor","signature","heart censor","mixed-language commentary","novelty censor",
+        "adversarial noise","watermark grid", "copyright name","bad id"," bad pixiv id",
+        "korean commentary","paid reward available","copyright request", 
     }
 
     for line in lines:
