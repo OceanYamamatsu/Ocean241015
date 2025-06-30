@@ -1,0 +1,60 @@
+
+/* :root{
+    --fgcol:#aaf;
+    --bgcol:#33f;
+}
+    
+
+html{
+    color:var( --fgcol );
+    background-color:var( --bgcol );
+}
+ */
+
+
+:root {
+    --fgcol: #aaf;
+    --bgcol: #33f;
+}
+
+html {
+    color: var(--fgcol);
+    background-color: var(--bgcol);
+}
+
+p {
+    color: #000;
+    transition: color 0.5s ease;
+}
+
+p:hover {
+    color: #F00;
+}
+
+li {
+    color: #fff;
+    background-color: #444;
+    padding: 5px;
+    margin: 5px 0;
+    transition: background-color 0.5s ease 0.3s;
+}
+
+li:hover {
+    background-color: #f80;
+}
+
+table td {
+    transition: background-color 0.3s;
+}
+
+table td:hover {
+    background-color: #ff0;
+}
+
+h3 + ul {
+    border: 2px solid #0ff;
+}
+
+h3 ~ ul {
+    background-color: rgba(255,255,255,0.1);
+}
