@@ -14,6 +14,7 @@ $db = new mysqli('iis.edu.tama.ac.jp', $myid, $mypass, $mydb);//開き
 $Puid = '22211379';//ホルダ１
 $Pbody = '何とかホルダー完全に理解した２';//ホルダ２
 $sql = ("insert into messages (uid,body) values (?,?)");//sql草案？
+
 $stmt = $db->prepare($sql);//sql準備
 $stmt->bind_param("ss", $Puid, $Pbody);//準備したsqlに値を挿入（合成）
 $stmt->execute();//sql実行

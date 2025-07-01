@@ -12,8 +12,10 @@ $db = new mysqli('iis.edu.tama.ac.jp', $myid, $mypass, $mydb);//開き
 // write my code here↓
 //----------------------------------------------------------------------------------
 
+insert into messages (uid,body) values (22211379,'TEST');
 
 $db->query("insert into messages (uid,body) values (22211379,'TEST')");
+$db->query("koko");
 
 echo 'Ok';
 //----------------------------------------------------------------------------------
