@@ -5,17 +5,18 @@ def extract_tags(input_file, output_file):
 
     tags = []
     skip_words = {
-        
-        "Characters", "General","original", "?", "artist name","circle name", "twitter username",
-        "copyright notice", "watermark", "Meta", "commentary","character censor",
-        "english commentary", "Copyright", "Character", "Artist","english text","korean text",
+        "Character","Characters", "General","original", "?", "Meta",
+        "Artist","artist name","circle name", "twitter username", "copyright name",
+        "copyright notice", "watermark", "commentary","character censor",
+        "english commentary", "Copyright","english text","korean text",
         "commentary request", "translation request", "censored", "mosaic censoring",
         "bar censor","signature","heart censor","mixed-language commentary","novelty censor",
-        "adversarial noise","watermark grid", "copyright name","bad id"," bad pixiv id",
+        "adversarial noise","watermark grid","bad id"," bad pixiv id",
         "korean commentary","paid reward available","copyright request", 
     }
 
     for line in lines:
+        print(line)
         line = line.strip()
         if not line:
             continue

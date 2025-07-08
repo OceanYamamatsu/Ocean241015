@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
     <head>
@@ -5,6 +9,7 @@
         <title>Sample 08-0</title>
     </head>
     <body>
+
 <?php
 ini_set('display_errors',"on");//error表示（本番では表示すべきでない）
 require_once('myps.php');//取り出し
