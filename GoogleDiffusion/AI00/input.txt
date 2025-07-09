@@ -1,84 +1,66 @@
 Artist
 ?
-chowol 40
+hashi 434
 Copyright
 ?
 original 1.3M
+Character
+?
+maehashi rui (hashi) 30
 General
 ?
 1girl 6.7M
 ?
-animal ears 1.3M
+arms up 209k
 ?
-arms under breasts 7.2k
+bikini 553k
 ?
-bare arms 153k
+bikini under clothes 20k
 ?
-bare shoulders 1.1M
+black hair 1.7M
 ?
-black hairband 108k
+blue bikini 46k
 ?
-blue eyes 2.0M
+day 374k
 ?
-bow 1.3M
+no pants 64k
 ?
-bowtie 352k
+open mouth 2.7M
 ?
-breasts 3.9M
+outdoors 606k
 ?
-cleavage 1.1M
+see-through clothes 170k
 ?
-closed mouth 1.4M
+see-through shirt 12k
 ?
-covered nipples 172k
+shirt 2.1M
 ?
-cowboy shot 640k
+short hair 2.5M
 ?
-detached collar 146k
-?
-fake animal ears 170k
-?
-grey hair 786k
-?
-hair ornament 1.6M
-?
-hairband 535k
-?
-leaning forward 129k
-?
-leotard 235k
-?
-long hair 4.9M
-?
-looking at viewer 3.8M
-?
-medium breasts 974k
-?
-playboy bunny 116k
-?
-rabbit ears 254k
-?
-side-tie leotard 3.0k
-?
-smile 3.2M
+sky 488k
 ?
 solo 5.5M
 ?
-strapless 177k
+standing 1.0M
 ?
-strapless leotard 69k
+swimsuit 726k
 ?
-sweatdrop 257k
+tan 64k
 ?
-translucent bunnysuit 877
+tanlines 34k
 ?
-twintails 996k
+tomboy 10.0k
 ?
-very long hair 1.1M
-Meta
+water 240k
 ?
-commission 223k
+water drop 28k
 ?
-highres 6.1M
+wet 161k
 ?
-absurdres 2.1M
+wet clothes 52k
+?
+wet shirt 17k
+?
+white shirt 1.0M
+?
+yellow eyes 787k
