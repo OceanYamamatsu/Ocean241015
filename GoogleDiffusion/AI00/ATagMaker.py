@@ -8,11 +8,11 @@ def extract_tags(input_file, output_file):
         "Character","Characters", "General","original", "?", "Meta",
         "Artist","artist name","circle name", "twitter username", "copyright name",
         "copyright notice", "watermark", "commentary","character censor",
-        "english commentary", "Copyright","english text","korean text",
+        "english commentary", "Copyright","english text","korean text","speech bubble",
         "commentary request", "translation request", "censored", "mosaic censoring","pointless censoring",
         "bar censor","signature","heart censor","mixed-language commentary","novelty censor",
         "adversarial noise","watermark grid","bad id","bad pixiv id",
-        "korean commentary","paid reward available","copyright request", 
+        "korean commentary","paid reward available","copyright request", "translated",
     }
 
     for line in lines:
