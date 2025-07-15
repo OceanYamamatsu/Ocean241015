@@ -41,8 +41,8 @@ def extract_tags(input_file, output_file):
 
 # 実行部分（ファイルパスは適宜変更）
 extract_tags(
-    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/AI00/input.txt',
-    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/AI00/output.txt'
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/input.txt',
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt'
 )
 
 
