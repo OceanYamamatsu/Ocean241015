@@ -19,7 +19,18 @@ if( empty($_SESSION['uid']) ) {
     echo '<p>書き込みたいなら <a href="login.php">ログインページ</a> へ。</p>';
 } else {
     // ログインしている場合の案内
-    echo '<p>' . htmlspecialchars($_SESSION['uid']) . ' さんでない場合は <a href="logout.php">ログアウト</a> をどうぞ。</p>';
+    echo '<p>' . htmlspecialchars($_SESSION['uid']) . ' さんでない場合は <a href="login.php">ログアウト</a> して。</p>';
+}
+// 書き込みフォーム
+if( !empty($_SESSION['uid']) )
+{
+    echo <<<EOD
+    <hr>
+    <form action="" method="post">
+        <input type="text" name="newpost" size="60">
+        <input type="submit" name="submit" value="書き込み">
+    </form>
+    EOD;
 }
 
 // 投稿処理
@@ -48,17 +59,17 @@ while( $mes = $res->fetch_assoc() )
     echo "<div class='message'><strong>{$name}</strong>：{$body}</div>\n";
 }
 
-// 書き込みフォーム
-if( !empty($_SESSION['uid']) )
-{
-    echo <<<EOD
-    <hr>
-    <form action="" method="post">
-        <input type="text" name="newpost" size="60">
-        <input type="submit" name="submit" value="書き込み">
-    </form>
-    EOD;
-}
+// // 書き込みフォーム
+// if( !empty($_SESSION['uid']) )
+// {
+//     echo <<<EOD
+//     <hr>
+//     <form action="" method="post">
+//         <input type="text" name="newpost" size="60">
+//         <input type="submit" name="submit" value="書き込み">
+//     </form>
+//     EOD;
+// }
 
 ?>
 

@@ -42,21 +42,30 @@ if( !empty($_POST['uid']) )
             // と ???????? の中に書こう
             // if(????????)
             //if( $_POST['password']===$d['password'] )//'='二つでもよい
-            if( $_POST['password'] === $d['password'] )
-            //if(password_verify ( $_post['password'],$b['password'] ) )//ハッシュのほう,そもそもusersにハッシュのpassが入っているときに有用
+            // if( $_POST['password'] === $d['password'] )
+            if(password_verify ( $_POST['password'],$d['password'] ) )//ハッシュのほう,そもそもusersにハッシュのpassが入っているときに有用
                 // ログイン成功
                 $login = true;// ログイン成功にする
         }
     }
 
     // ログイン成功なら、SESSION 変数に、送られてきたユーザ ID を保存しておこう
+    // if( $login )
+    // {
+    //     // 「セッション変数に、ユーザ ID を保存」と書きたい。
+    //     // ？？？？？？？？
+    //     $_SESSION['uid']=$_POST['uid'];
+    //     print('Welcome ' . $_SESSION['uid']);
+    // }
     if( $login )
     {
-        // 「セッション変数に、ユーザ ID を保存」と書きたい。
-        // ？？？？？？？？
-        $_SESSION['uid']=$_POST['uid'];
-        print('Welcome ' . $_SESSION['uid']);
+        $_SESSION['uid'] = $_POST['uid'];
+        print('Welcome ' . $_SESSION['uid'] . "<br />\n");
+        echo '<form action="bbs.php" method="get">';
+        echo '    <input type="submit" value="掲示板へ">';
+        echo '</form>';
     }
+
     // 失敗なら、エラー表示
     else {
         print("Password Error<br />\n");
