@@ -18,8 +18,9 @@ $db = new mysqli('iis.edu.tama.ac.jp', $myid, $mypass, $mydb);
 if( empty($_SESSION['uid']) ) {
     echo '<p>書き込みたいなら <a href="login.php">ログインページ</a> へ。</p>';
 } else {
-    // ログインしている場合の案内
-    echo '<p>' . htmlspecialchars($_SESSION['uid']) . ' さんでない場合は <a href="login.php">ログアウト</a> して。</p>';
+    // // ログインしている場合の案内
+    // echo '<p>' . htmlspecialchars($_SESSION['uid']) . ' さんでない場合は <a href="login.php">ログアウト</a> して。</p>';
+
 }
 // 書き込みフォーム
 if( !empty($_SESSION['uid']) )
