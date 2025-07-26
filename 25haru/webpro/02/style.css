@@ -1,0 +1,94 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  background: linear-gradient(45deg, red, yellow, lime, cyan, magenta);
+  background-size: 1000% 1000%;
+  animation: colorshift 10s infinite alternate;
+  color: rgb(0, 0, 0);
+}
+
+@keyframes colorshift {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 3rem;
+  color: yellow;
+  text-shadow: 0 0 10px red, 0 0 20px blue;
+}
+
+main {
+  padding: 2rem;
+}
+
+.intro, .hobby {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border: 2px solid rgb(0, 0, 0);
+  transition: transform 0.3s ease;
+}
+
+.hover-grow {
+  font-size: 2.5rem;
+  transition: transform 1s ease, font-size 1s ease;
+}
+
+.hover-grow:hover {
+  transform: scale(1.2);
+  font-size: 3.2rem;
+}
+
+.hover-fade {
+  transition: opacity 3s ease;
+}
+
+.hover-fade:hover {
+  opacity: 0;
+}
+
+.fade-target {
+  transition: opacity 3s ease;
+}
+
+.fade-target:hover {
+  opacity: 0;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  background-color: yellow;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#displayName {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  color: lightgreen;
+}
+
+footer {
+  text-align: center;
+  background-color: black;
+  padding: 1rem;
+  color: rgb(0, 0, 0);
+}

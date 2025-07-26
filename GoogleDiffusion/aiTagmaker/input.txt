@@ -1,77 +1,83 @@
 Artist
 ?
-oldercat 23
-Copyright
+bunysk 4
+Copyrights
 ?
-arknights 161k
-Character
+splatoon (series) 29k
 ?
-exusiai (arknights) 4.2k
+splatoon 1 6.4k
+Characters
+?
+inkling player character 14k
+?
+inkling girl 12k
+?
+kaori (splatoon) 512
 General
 ?
 1girl 6.7M
 ?
-bare arms 154k
+anniversary 15k
 ?
-bare shoulders 1.1M
+bike shorts 54k
 ?
-black one-piece swimsuit 26k
-?
-blue sky 226k
-?
-breasts 3.9M
+black shorts 145k
 ?
 closed mouth 1.4M
 ?
-cloud 325k
+copyright name 140k
 ?
-competition swimsuit 33k
+gun 160k
 ?
-covered collarbone 9.0k
+hand on own hip 176k
 ?
-covered navel 152k
+headphones 111k
 ?
-day 377k
+holding 1.6M
 ?
-detached wings 11k
+holding gun 77k
 ?
-hair between eyes 1.3M
+holding weapon 311k
 ?
-hair intakes 151k
+ink 2.9k
 ?
-halo 329k
+ink tank (splatoon) 1.6k
 ?
-horizon 24k
+inkling 21k
 ?
-letterboxed 60k
+long hair 4.9M
 ?
-looking at viewer 3.8M
+orange eyes 198k
 ?
-medium breasts 980k
+orange hair 273k
 ?
-ocean 113k
+paint 4.4k
 ?
-one-piece swimsuit 149k
+print shirt 20k
 ?
-orange eyes 197k
+shirt 2.2M
 ?
-outdoors 614k
-?
-red hair 593k
-?
-sky 493k
+shorts 511k
 ?
 smile 3.3M
 ?
 solo 5.6M
 ?
-swimsuit 734k
+splattershot (splatoon) 1.2k
 ?
-water 242k
+t-shirt 77k
 ?
-white wings 42k
+tentacle hair 35k
 ?
-wings 488k
+weapon 663k
+?
+white background 1.8M
+?
+white shirt 1.0M
 Meta
 ?
-english commentary 586k
+commentary 1.7M
+?
+english commentary 590k
+?
+highres 6.1M
