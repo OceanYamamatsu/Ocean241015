@@ -1,4 +1,16 @@
-<?php session_start(); ?>
+<?php
+session_start();
+// logout パラメータがある場合にセッション破棄
+if (isset($_GET['logout'])) {
+    $_SESSION = array();
+    session_destroy();
+    header("Location: login.php");
+    exit;
+}
+?>
+
+
+<!-- <?php session_start(); ?> -->
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
     <head>

@@ -8,18 +8,22 @@
 </head>
 <body>
 
+
 <?php
 
 // include_once('ml.php');
 include_once('myps.php');
 $db = new mysqli('iis.edu.tama.ac.jp', $myid, $mypass, $mydb);
 
+
 // ログインしていない場合の処理
 if( empty($_SESSION['uid']) ) {
     echo '<p>書き込みたいなら <a href="login.php">ログインページ</a> へ。</p>';
 } else {
-    // // ログインしている場合の案内
+    // ログインしている場合の案内
     // echo '<p>' . htmlspecialchars($_SESSION['uid']) . ' さんでない場合は <a href="login.php">ログアウト</a> して。</p>';
+    echo '<p>' . htmlspecialchars($_SESSION['uid']) . ' さんでない場合は <a href="login.php?logout=1">ログアウト</a> して。</p>';
+
 
 }
 // 書き込みフォーム
