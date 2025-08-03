@@ -13,6 +13,7 @@ def extract_tags(input_file, output_file):
         "bar censor","signature","heart censor","mixed-language commentary","novelty censor",
         "adversarial noise","watermark grid","bad id","bad pixiv id",
         "korean commentary","paid reward available","copyright request", "translated",
+        "variant set", "large variant set",
     }
 
     for line in lines:
