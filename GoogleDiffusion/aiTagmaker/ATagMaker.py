@@ -15,7 +15,7 @@ def extract_tags(input_file, output_file):
         "adversarial noise","watermark grid","bad id","bad pixiv id",
         "korean commentary","paid reward available","copyright request", "translated",
         "variant set", "large variant set", "commission", "pixiv commission","character request",
-        "source request", "third-party edit",
+        "source request", "third-party edit","subscribestar username","pixiv username",
     }
 
     for line in lines:
