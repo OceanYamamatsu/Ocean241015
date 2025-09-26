@@ -1,153 +1,85 @@
 Artist
 ?
-oddsnail 144
-Copyright
+raikkonen 190
+Copyrights
 ?
-zenless zone zero 55k
-Characters
+hololive 267k
 ?
-belle (zenless zone zero) 5.1k
+hololive indonesia 9.1k
+Character
 ?
-magus (zenless zone zero) 258
-?
-orphie magnusson 383
-?
-trigger (zenless zone zero) 733
+kaela kovalskia 1.1k
 General
 ?
-... 62k
+1girl 7.0M
 ?
-3girls 276k
+bed sheet 107k
 ?
-:3 140k
-?
-= = 29k
-?
-? 83k
-?
-alternate costume 522k
-?
-arm behind back 44k
-?
-averting eyes 12k
-?
-belt 410k
-?
-belt buckle 41k
-?
-black belt 76k
-?
-black horns 41k
-?
-black leotard 84k
-?
-black mask 9.8k
+black panties 154k
 ?
 blonde hair 1.8M
 ?
-blue hair 1.0M
-?
 breasts 4.0M
 ?
-buckle 57k
+cleavage 1.2M
 ?
-chibi 292k
+double-parted bangs 47k
 ?
-chibi inset 21k
+grin 283k
 ?
-closed eyes 844k
-?
-closed mouth 1.5M
-?
-covered abs 4.8k
-?
-covered collarbone 9.6k
-?
-covered eyes 21k
-?
-covered navel 159k
-?
-covered nipples 177k
-?
-cowboy shot 676k
-?
-english text 303k
-?
-eye mask 8.9k
-?
-flying sweatdrops 103k
-?
-hair ornament 1.7M
-?
-hairclip 388k
-?
-hand in own hair 39k
-?
-hand up 430k
-?
-highleg 137k
-?
-highleg leotard 64k
-?
-horns 552k
+hair between eyes 1.4M
 ?
 large breasts 1.8M
 ?
-leotard 249k
+looking at viewer 3.9M
 ?
-long hair 5.1M
+lying 516k
 ?
-long sleeves 1.9M
+messy hair 74k
 ?
-mechanical tail 5.3k
+navel 1.3M
 ?
-motion lines 95k
+no bra 111k
 ?
-multiple girls 1.8M
+no pants 66k
 ?
-orange hair 283k
+on side 103k
 ?
-parted bangs 243k
+panties 716k
 ?
-parted lips 593k
+red eyes 1.5M
 ?
-pointy ears 470k
+shirt 2.3M
 ?
 short hair 2.6M
 ?
-sideways glance 34k
-?
 simple background 2.2M
 ?
-skindentation 136k
+single sidelock 14k
 ?
 smile 3.4M
 ?
-sparkle 181k
+solo 5.8M
 ?
 speech bubble 352k
 ?
-spoken ellipsis 42k
+t-shirt 80k
 ?
-standing 1.1M
+thigh gap 85k
 ?
-sweatdrop 269k
+underwear 883k
 ?
-tail 939k
-?
-thigh belt 7.2k
-?
-thigh strap 193k
-?
-very long hair 1.1M
+virtual youtuber 500k
 ?
 white background 1.8M
+?
+white shirt 1.1M
 Meta
 ?
-commentary request 4.5M
+commentary 1.8M
+?
+english commentary 677k
 ?
 highres 6.4M
 ?
 absurdres 2.3M
-?
-korean commentary 123k
