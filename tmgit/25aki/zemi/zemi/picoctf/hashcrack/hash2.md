@@ -58,4 +58,67 @@ The flag is: picoCTF{UseStr0nG_h@shEs_&PaSswDs!_4c95d69f}
                                                             
 
 
-                                                            
+
+┌──(kali㉿kali)-[~/picoctf/hashcrack]
+└─$ hashcat -m 1400 -a 0 hash2.txt ./SecLists/Passwords/Leaked-Databases -w 3               
+hashcat (v6.2.6) starting
+
+OpenCL API (OpenCL 3.0 PoCL 6.0+debian  Linux, None+Asserts, RELOC, LLVM 17.0.6, SLEEF, DISTRO, POCL_DEBUG) - Platform #1 [The pocl project]
+============================================================================================================================================
+* Device #1: cpu-haswell-13th Gen Intel(R) Core(TM) i7-1355U, 1403/2870 MB (512 MB allocatable), 2MCU
+
+Minimum password length supported by kernel: 0
+Maximum password length supported by kernel: 256
+
+Hashes: 1 digests; 1 unique digests, 1 unique salts
+Bitmaps: 16 bits, 65536 entries, 0x0000ffff mask, 262144 bytes, 5/13 rotates
+Rules: 1
+
+Optimizers applied:
+* Zero-Byte
+* Early-Skip
+* Not-Salted
+* Not-Iterated
+* Single-Hash
+* Single-Salt
+* Raw-Hash
+
+ATTENTION! Pure (unoptimized) backend kernels selected.
+Pure kernels can crack longer passwords, but drastically reduce performance.
+If you want to switch to optimized kernels, append -O to your commandline.
+See the above message to find out about the exact limits.
+
+Watchdog: Temperature abort trigger set to 90c
+
+Host memory required for this attack: 0 MB
+
+Dictionary cache built:
+* Filename..: ./SecLists/Passwords/Leaked-Databases/000webhost.txt
+* Passwords.: 720302
+* Bytes.....: 7708819
+* Keyspace..: 720302
+* Runtime...: 0 secs
+
+916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad30a8d88697745:qwerty098
+                                                          
+Session..........: hashcat
+Status...........: Cracked
+Hash.Mode........: 1400 (SHA2-256)
+Hash.Target......: 916e8c4f79b25028c9e467f1eb8eee6d6bbdff965f9928310ad...697745
+Time.Started.....: Wed Oct  1 18:16:25 2025 (0 secs)
+Time.Estimated...: Wed Oct  1 18:16:25 2025 (0 secs)
+Kernel.Feature...: Pure Kernel
+Guess.Base.......: File (./SecLists/Passwords/Leaked-Databases/000webhost.txt)
+Guess.Queue......: 1/56 (1.79%)
+Speed.#1.........:  1051.2 kH/s (0.19ms) @ Accel:256 Loops:1 Thr:1 Vec:8
+Recovered........: 1/1 (100.00%) Digests (total), 1/1 (100.00%) Digests (new)
+Progress.........: 158208/720302 (21.96%)
+Rejected.........: 0/158208 (0.00%)
+Restore.Point....: 157696/720302 (21.89%)
+Restore.Sub.#1...: Salt:0 Amplifier:0-1 Iteration:0-1
+Candidate.Engine.: Device Generator
+Candidates.#1....: CBFa354AW456 -> putriforever1
+Hardware.Mon.#1..: Util: 45%
+
+Started: Wed Oct  1 18:16:24 2025
+Stopped: Wed Oct  1 18:16:27 2025
