@@ -65,3 +65,12 @@ Welcome!! Looking For the Secret?
 We have identified a hash: 482c811da5d5b4bc6d497ffa98491e38
 Enter the password for identified hash: abs
 Incorrect. Goodbye.
+
+
+
+
+
+
+hashcat -m 0 -a 3 482c811da5d5b4bc6d497ffa98491e38 '?a?a?a?a?a?a?a?a'
+nc verbal-sleep.picoctf.net 51214
+482c811da5d5b4bc6d497ffa98491e38
