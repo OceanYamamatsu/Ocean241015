@@ -16,6 +16,9 @@ msfconsole
 
 
 nmap -sV <teaget ip>
+nmap -sV 127.0.0.1
+ nmap -sV 192.168.56.1
+
 
 search vsftpd 2.3.4
               ↑vol.
