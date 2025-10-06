@@ -42,7 +42,7 @@ sudo apt update && upgrade -y
 
 sudo apt install -y snort
 //installする
-,,,
+,,,,,
 
 snort --version
 //instoll確認
