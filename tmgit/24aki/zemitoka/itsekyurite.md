@@ -1,8 +1,13 @@
 #itセキュリティ用
 
+mkdir [name]
+rm,rmdir [name]
+
 itセキュリティ
 kali
 msfadmin
+reboot
+sudo su
 
 
 sudo shutdown now
