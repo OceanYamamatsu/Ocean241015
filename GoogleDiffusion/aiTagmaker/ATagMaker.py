@@ -16,7 +16,7 @@ def extract_tags(input_file, output_file):
         "korean commentary","paid reward available","copyright request", "translated",
         "variant set", "large variant set", "commission", "pixiv commission","character request",
         "source request", "third-party edit","subscribestar username","pixiv username",
-        "character name", "logo", "artist logo","cover", "cover page", 
+        "character name", "logo", "artist logo","cover", "cover page",  "fanbox_username","web_address",
     }
 
     for line in lines:
