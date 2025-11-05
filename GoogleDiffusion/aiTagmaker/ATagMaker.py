@@ -17,7 +17,7 @@ def extract_tags(input_file, output_file):
         "variant set", "large variant set", "commission", "pixiv commission","character request",
         "source request", "third-party edit","subscribestar username","pixiv username",
         "character name", "logo", "artist logo","cover", "cover page",  "fanbox_username","web_address",
-        "hashtag-only commentary",,
+        "hashtag-only commentary",
     }
 
     for line in lines:
