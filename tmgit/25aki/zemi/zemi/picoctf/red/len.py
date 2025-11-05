@@ -1,0 +1,1 @@
+print(len(str("cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==")))
