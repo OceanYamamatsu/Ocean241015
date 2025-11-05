@@ -90,3 +90,7 @@ b3,rgba,msb,xy      .. text: "#wb#wp#7p"
 b3,abgr,msb,xy      .. text: "7r'wb#7p"
 b4,b,lsb,xy         .. file: 0421 Alliant compact executable not stripped
                                    
+
+
+
+echo "cGljb0NURntyM2RfMXNfdGgzX3VsdDFtNHQzX2N1cjNfZjByXzU0ZG4zNTVffQ==" | base64 -d
