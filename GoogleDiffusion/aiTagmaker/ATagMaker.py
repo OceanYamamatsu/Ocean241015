@@ -18,7 +18,8 @@ def extract_tags(input_file, output_file):
         "source request", "third-party edit","subscribestar username","pixiv username",
         "character name", "logo", "artist logo","cover", "cover page",  "fanbox_username","web_address",
         "hashtag-only commentary","facebook username","web address"," chinese commentary"," dated",
-        'second-party source',"pixiv id",
+        'second-party source',"pixiv id","pixiv logo", "patreon logo", "twitter x logo", "bluesky logo", 
+        "fanbox logo", 
     }
 
     for line in lines:
