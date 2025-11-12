@@ -73,3 +73,58 @@ Interface #0 info:
 =============================================================================================================
 =============================================================================================================
 =============================================================================================================
+┌──(kali㉿kali)-[~/picoctf/Ph4nt0m_1ntrud3r]
+└─$ tshark -r myNetworkTraffic.pcap -T fields -e frame.number -e frame.time_epoch -e ip.src -e ip.dst -e _ws.col.Protocol -e _ws.col.Info | less -S 
+
+
+1       1741231895.796143000    192.168.0.2     192.168.1.2     TCP     20 → 80 [SYN] Seq=0 Win=8192 Len=12 [T>
+2       1741231895.795918000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+3       1741231895.796375000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+4       1741231895.794980000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+5       1741231895.794257000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+6       1741231895.794008000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+7       1741231895.796941000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+8       1741231895.794488000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+9       1741231895.793525000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+10      1741231895.795444000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+11      1741231895.797392000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+12      1741231895.792763000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+13      1741231895.795678000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+14      1741231895.791921000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+15      1741231895.795209000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+16      1741231895.793031000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+17      1741231895.793756000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+18      1741231895.793270000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+19      1741231895.794733000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+20      1741231895.796700000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+21      1741231895.797170000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+22      1741231895.792382000    192.168.0.2     192.168.1.2     TCP     [TCP Retransmission] 20 → 80 [SYN] Seq>
+(END)
+
+
+
+
+echo "ezF0X3c0cw==cGljb0NURg==bnRfdGg0dA==Yt8ksMM=3psv5C4=YQEFzIU=YmhfNHJfOQ==a23/UbI=TOGSGg4=bpzQ0R8=fQ==nfu4Vww=J4auZMY=ePRXDio=fjIzQwk=XThGxuE=ckBkZLk=CJr4oDk=BgJLB0c=XzM0c3lfdA==NTlmNTBkMw==dgV9v0s=  " | base64 -d
+
+echo "ezF0X3c0cw==" | base64 -d
+
+┌──(kali㉿kali)-[~/picoctf/Ph4nt0m_1ntrud3r]
+└─$ tshark -r myNetworkTraffic.pcap -Y 'tcp && tcp.payload' -T fields -e tcp.payload | tr -d '\n' | xxd -r -p > payload_hex.bin
+
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~/picoctf/Ph4nt0m_1ntrud3r]
+└─$ ls
+myNetworkTraffic.pcap  payload.bin  payload_hex.bin
+                                                                                                                                                                                       
+┌──(kali㉿kali)-[~/picoctf/Ph4nt0m_1ntrud3r]
+└─$ cat payload_hex.bin 
+ezF0X3c0cw==cGljb0NURg==bnRfdGg0dA==Yt8ksMM=3psv5C4=YQEFzIU=YmhfNHJfOQ==a23/UbI=TOGSGg4=bpzQ0R8=fQ==nfu4Vww=J4auZMY=ePRXDio=fjIzQwk=XThGxuE=ckBkZLk=CJr4oDk=BgJLB0c=XzM0c3lfdA==NTlmNTBkMw==dgV9v0s= 
+
+
+
+
+
+
+
+
+tshark -r myNetworkTraffic.pcap -Y 'tcp && tcp.payload'  | tr -d '\n' | xxd -r -p > payload_hex2.bin
