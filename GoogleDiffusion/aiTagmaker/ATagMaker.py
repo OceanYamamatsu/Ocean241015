@@ -6,7 +6,7 @@ def extract_tags(input_file, output_file):
     tags = []
     skip_words = {
         "Character","Characters", "General","original", "?", "Meta",
-        "Artist",
+        "Artist","name tag", 
         "artist name","circle name","character name","copyright name",
         "twitter username","fanbox_username", "subscribestar username","pixiv username","facebook username",
         "logo", "artist logo","pixiv logo", "patreon logo", "twitter x logo", "bluesky logo", "fanbox logo",
@@ -22,7 +22,7 @@ def extract_tags(input_file, output_file):
         "source request", "third-party edit",
         "cover", "cover page",  "web_address",
         "hashtag-only commentary","web address"," chinese commentary"," dated",
-        'second-party source',
+        'second-party source',"odaibako","request inset", 
     }
 
     for line in lines:
