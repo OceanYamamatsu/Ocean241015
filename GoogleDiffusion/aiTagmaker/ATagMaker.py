@@ -12,7 +12,7 @@ def extract_tags(input_file, output_file):
         "logo", "artist logo","pixiv logo", "patreon logo", "twitter x logo", "bluesky logo", "fanbox logo",
         "bad id","bad pixiv id","pixiv id",
         "copyright notice", "watermark", "commentary",
-        "character censor","novelty censor","heart censor","bar censor",
+        "character censor","novelty censor","heart censor","bar censor","censored",
         "english commentary", "Copyright","english text","korean text","speech bubble",
         "mosaic censoring","pointless censoring","convenient censoring", 
         "signature","mixed-language commentary",
