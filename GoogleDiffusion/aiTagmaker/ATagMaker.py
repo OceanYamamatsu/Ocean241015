@@ -55,7 +55,14 @@ extract_tags(
     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt'
 )
 
+import subprocess
+import os
 
+# 実行後に VSCode で output.txt を開く
+output_path = r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt"
+subprocess.Popen(["code", output_path])
+
+# https://www.kia.or.jp/event/detail/?id=7504&utm_source=chatgpt.com
 
 # def extract_tags(input_file, output_file):
 #     with open(input_file, 'r', encoding='utf-8') as f:
