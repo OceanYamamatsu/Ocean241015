@@ -1,66 +1,194 @@
-
-def extract_tags(input_file, output_file):
-    with open(input_file, 'r', encoding='utf-8') as f:
+import os
+def extract_tags(input_file,output_file,entry_file):
+    with open(input_file,'r',encoding='utf-8') as f:
         lines = f.readlines()
-
     tags = []
     skip_words = {
-        "Character","Characters", "General","original", "?", "Meta",
-        "Artist","name tag", 
+        "Character","Characters","General","original","?"," Meta","Artist","name tag",
         "artist name","circle name","character name","copyright name",
-        "twitter username","fanbox_username", "subscribestar username","pixiv username","facebook username",
-        "logo", "artist logo","pixiv logo", "patreon logo", "twitter x logo", "bluesky logo", "fanbox logo",
-        "bad id","bad pixiv id","pixiv id",
-        "copyright notice", "watermark", "commentary",
+        "twitter username","fanbox_username","subscribestar username","pixiv username","facebook username",
+        "logo","artist logo","pixiv logo","patreon logo","twitter x logo","bluesky logo","fanbox logo",
+        "bad id","bad pixiv id","pixiv id","copyright notice","watermark","commentary",
         "character censor","novelty censor","heart censor","bar censor","censored",
-        "english commentary", "Copyright","english text","korean text","speech bubble",
-        "mosaic censoring","pointless censoring","convenient censoring", 
-        "signature","mixed-language commentary",
-        "adversarial noise","watermark grid",
-        "korean commentary","paid reward available","copyright request", "translated",
-        "variant set", "large variant set", "commission", "pixiv commission","character request",
-        "source request", "third-party edit",
-        "cover", "cover page",  "web_address",
+        "english commentary","Copyright","english text","korean text","speech bubble",
+        "mosaic censoring","pointless censoring","convenient censoring","signature",
+        "mixed-language commentary","adversarial noise","watermark grid",
+        "korean commentary","paid reward available","copyright request","translated",
+        "variant set","large variant set","commission","pixiv commission","character request",
+        "source request","third-party edit","cover","cover page","web_address",
         "hashtag-only commentary","web address"," chinese commentary"," dated",
-        'second-party source',"odaibako","request inset", 
+        'second-party source',"odaibako","request inset",
     }
-
     for line in lines:
         print(line)
         line = line.strip()
         if not line:
             continue
-
         if ' ' in line:
             parts = line.rsplit(' ', 1)
             tag = parts[0]
         else:
             tag = line
-
         if tag in skip_words:
             continue
-
-        # スキップしないタグをリストに追加
         if ' ' in line:
             tags.append(tag)
-
-    # 結果をoutput.txtに書き込み
+    # --- output.txt に上書き ---
+    output_text = ", " + ", ".join(tags) + ","
     with open(output_file, 'w', encoding='utf-8') as f:
-        f.write(", " + ", ".join(tags) + ",")
-        print("complethion")
-
-# 実行部分（ファイルパスは適宜変更）
+        f.write(output_text)
+        print("complethion1")
+    # --- entry_file に追記（重複チェック付き） ---
+    last_entry = ""
+    if os.path.exists(entry_file):
+        with open(entry_file, 'r', encoding='utf-8') as f:
+            lines = f.read().strip().splitlines()
+            if lines:
+                last_entry = lines[-1]
+    if output_text != last_entry:
+        with open(entry_file, 'a', encoding='utf-8') as f:
+            f.write(output_text + "\n\n")
+            print("complethion2 (added)")
+    else:
+        print("complethion2 (skipped)")
+    os.startfile(output_file)
+# 実行部分
 extract_tags(
     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/input.txt',
-    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt'
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt',
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/z4/14.md'
 )
 
-import subprocess
-import os
+# def extract_tags(input_file, output_file, entry_file,):
+#     with open(input_file, 'r', encoding='utf-8') as f:
+#         lines = f.readlines()
+#         tags = []
+#         skip_words = {
+#             "Character","Characters", "General","original", "?", "Meta",
+#             "Artist","name tag", 
+#             "artist name","circle name","character name","copyright name",
+#             "twitter username","fanbox_username", "subscribestar username","pixiv username","facebook username",
+#             "logo", "artist logo","pixiv logo", "patreon logo", "twitter x logo", "bluesky logo", "fanbox logo",
+#             "bad id","bad pixiv id","pixiv id",
+#             "copyright notice", "watermark", "commentary",
+#             "character censor","novelty censor","heart censor","bar censor","censored",
+#             "english commentary", "Copyright","english text","korean text","speech bubble",
+#             "mosaic censoring","pointless censoring","convenient censoring", 
+#             "signature","mixed-language commentary",
+#             "adversarial noise","watermark grid",
+#             "korean commentary","paid reward available","copyright request", "translated",
+#             "variant set", "large variant set", "commission", "pixiv commission","character request",
+#             "source request", "third-party edit",
+#             "cover", "cover page",  "web_address",
+#             "hashtag-only commentary","web address"," chinese commentary"," dated",
+#             'second-party source',"odaibako","request inset", 
+#         }
+#     for line in lines:
+#         print(line)
+#         line = line.strip()
+#         if not line:
+#             continue
+#         if ' ' in line:
+#             parts = line.rsplit(' ', 1)
+#             tag = parts[0]
+#         else:
+#             tag = line
+#         if tag in skip_words:
+#             continue
+#         # スキップしないタグをリストに追加
+#         if ' ' in line:
+#             tags.append(tag)
+#         # 結果をoutput.txtに書き込み
+#         with open(output_file, 'w', encoding='utf-8') as f:
+#             f.write(", " + ", ".join(tags) + ",")
+#             print("complethion"+"1")
+#         # 結果を任意の.txtに追加
+#         with open(entry_file, 'a', encoding='utf-8') as f:
+#             f.write("\n" + ", " + ", ".join(tags) + ",\n\n")
+#             print("complethion"+"2")
+#     import os
+#     os.startfile(r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt")
 
-# 実行後に VSCode で output.txt を開く
-output_path = r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt"
-subprocess.Popen(["code", output_path])
+
+# # 実行部分（ファイルパスは適宜変更） 
+# extract_tags(
+#             'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/input.txt',
+#             'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt',
+#             'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/z4/14.md'
+#             )
+# ==================================================================================================================
+# import subprocess
+# subprocess.Popen([r"C:/Users/hekat/AppData/Local/Programs/Microsoft VS Code/Code.exe", r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt"])
+# import subprocess
+# subprocess.Popen(["code", "--reuse-window", r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt"])
+
+# def extract_tags(input_file, output_file):
+#     with open(input_file, 'r', encoding='utf-8') as f:
+#         lines = f.readlines()
+#     tags = []
+#     skip_words = {
+#         "Character","Characters", "General","original", "?", "Meta",
+#         "Artist","name tag", 
+#         "artist name","circle name","character name","copyright name",
+#         "twitter username","fanbox_username", "subscribestar username","pixiv username","facebook username",
+#         "logo", "artist logo","pixiv logo", "patreon logo", "twitter x logo", "bluesky logo", "fanbox logo",
+#         "bad id","bad pixiv id","pixiv id",
+#         "copyright notice", "watermark", "commentary",
+#         "character censor","novelty censor","heart censor","bar censor","censored",
+#         "english commentary", "Copyright","english text","korean text","speech bubble",
+#         "mosaic censoring","pointless censoring","convenient censoring", 
+#         "signature","mixed-language commentary",
+#         "adversarial noise","watermark grid",
+#         "korean commentary","paid reward available","copyright request", "translated",
+#         "variant set", "large variant set", "commission", "pixiv commission","character request",
+#         "source request", "third-party edit",
+#         "cover", "cover page",  "web_address",
+#         "hashtag-only commentary","web address"," chinese commentary"," dated",
+#         'second-party source',"odaibako","request inset", 
+#     }
+
+#     for line in lines:
+#         print(line)
+#         line = line.strip()
+#         if not line:
+#             continue
+
+#         if ' ' in line:
+#             parts = line.rsplit(' ', 1)
+#             tag = parts[0]
+#         else:
+#             tag = line
+
+#         if tag in skip_words:
+#             continue
+
+#         # スキップしないタグをリストに追加
+#         if ' ' in line:
+#             tags.append(tag)
+
+#     # 結果をoutput.txtに書き込み
+#     with open(output_file, 'w', encoding='utf-8') as f:
+#         f.write(", " + ", ".join(tags) + ",")
+#         print("complethion")
+
+# # 実行部分（ファイルパスは適宜変更）
+# extract_tags(
+#     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/input.txt',
+#     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt'
+# )
+
+# # ==========================================================================================
+# import subprocess
+# vscode_path = r"C:/Users/hekat/AppData/Local/Programs/Microsoft VS Code/Code.exe"
+# output_path = r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt"
+# subprocess.Popen([vscode_path, output_path])
+# # ==========================================================================================
+# import subprocess
+# import os
+# # 実行後に VSCode で output.txt を開く
+# output_path = r"C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt"
+# subprocess.Popen(["code", output_path])
+# ==========================================================================================
 
 # https://www.kia.or.jp/event/detail/?id=7504&utm_source=chatgpt.com
 
