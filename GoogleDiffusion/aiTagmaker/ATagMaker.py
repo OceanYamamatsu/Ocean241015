@@ -4,7 +4,7 @@ def extract_tags(input_file,output_file,entry_file):
         lines = f.readlines()
     tags = []
     skip_words = {
-        "pubic hair",
+        "pubic hair","female pubic hair",
         "Character","Characters","General","original","?"," Meta","Artist","name tag",
         "artist name","circle name","character name","copyright name",
         "twitter username","fanbox_username","subscribestar username","pixiv username","facebook username",
