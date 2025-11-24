@@ -19,6 +19,10 @@ def extract_tags(input_file,output_file,entry_file):
         "source request","third-party edit","cover","cover page","web_address",
         "hashtag-only commentary","web address"," chinese commentary"," dated",
         'second-party source',"odaibako","request inset",
+        "request","commentary request","translation","translation request",
+        "instagram logo","instagram username", 
+
+        "bleeding","injury,","blood","bruise",
     }
     for line in lines:
         print(line)
@@ -57,7 +61,7 @@ def extract_tags(input_file,output_file,entry_file):
 extract_tags(
     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/input.txt',
     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt',
-    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/z4/15.md'
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/z4/16.md'
 )
 
 # def extract_tags(input_file, output_file, entry_file,):
