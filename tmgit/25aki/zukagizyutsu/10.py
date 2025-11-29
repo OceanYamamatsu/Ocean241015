@@ -5,7 +5,7 @@
 
 # 又は
 # print("a =", [i*i for i in range(8)])
-# 又は
+# 又は,
  
 x = 1
 i = 1
