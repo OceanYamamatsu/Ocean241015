@@ -61,7 +61,7 @@ def extract_tags(input_file,output_file,entry_file):
 extract_tags(
     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/input.txt',
     'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/aiTagmaker/output.txt',
-    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/z4/16.md'
+    'C:/Users/hekat/py/Ocean241015/GoogleDiffusion/z4/17.md'
 )
 
 # def extract_tags(input_file, output_file, entry_file,):
