@@ -7,16 +7,17 @@
 # print("a =", [i*i for i in range(8)])
 # 又は,
  
-x = 1
-i = 1
-a = [0] * 8
-try:
-    for _ in range(8):
-        a[i] = i * i
-        i = i+1
-except IndexError as e:
-    print("a =", a)
-    print("i =", i)
-    print(""" "error" """,e)
+# x = 1
+# i = 1
+# a = [0] * 8
+# try:
+#     for _ in range(8):
+#         a[i] = i * i
+#         i = i+1
+# except IndexError as e:
+#     print("a =", a)
+#     print("i =", i)
+#     print(""" "error" """,e)
 
 
+print(35/13)
