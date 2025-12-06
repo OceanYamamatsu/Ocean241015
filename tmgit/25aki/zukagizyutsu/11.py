@@ -14,4 +14,4 @@ for u in patterns:
     else:
         ans.append([u,an])
 
-print(ans)
+print()

@@ -68,7 +68,7 @@ for u in patterns:
 print(aaa)
 print(sum(aaa))
 
-print('777777')
-print(2**10)
-print(2**100)
-print(100*101/2)
+# print('777777')
+# print(2**10)
+# print(2**100)
+# print(100*101/2)
