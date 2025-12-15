@@ -79,3 +79,4 @@ result = decode_icon_array_from_url(url)
 print("要素数:", len(result))
 for i, v in enumerate(result):
     print(i, ":", v)
+# ?
