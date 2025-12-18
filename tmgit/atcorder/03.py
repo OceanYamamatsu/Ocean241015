@@ -22,3 +22,33 @@ for k in range(2, n*n + 1):
 # 出力
 for row in grid:
     print(*row)
+
+# ==========================================================
+N, M = map(int, input().split())
+
+# マス目の占有状態（False = 空）
+grid = [[False]*N for _ in range(N)]
+
+count = 0
+
+for _ in range(M):
+    R, C = map(int, input().split())
+    R -= 1  # 0-indexed に変換
+    C -= 1
+
+    # 2×2 の範囲がすべて空か確認
+    can_put = True
+    for dr in (0, 1):
+        for dc in (0, 1):
+            if grid[R+dr][C+dc]:
+                can_put = False
+
+    # 置けるなら配置
+    if can_put:
+        for dr in (0, 1):
+            for dc in (0, 1):
+                grid[R+dr][C+dc] = True
+        count += 1
+
+print(count)
+
