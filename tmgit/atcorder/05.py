@@ -1,7 +1,8 @@
 n,m=map(int, input().split())
 grid = [input() for _ in range(n)]
-for _ in range(n*m):
-    if
+# for _ in range(n*m):
+#     if
+
 
 
 
